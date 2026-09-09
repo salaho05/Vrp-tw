@@ -1,0 +1,451 @@
+
+￼
+Running maroc_vrptw_cppur.mzn, instance_maroc_vrptw_50c.dzn
+5m 51s
+
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-chuffed.EXE for solving, parameters: -a -s -t 349082 -v 
+WARNING: the --time-out flag has recently been changed.The time-out is now provided in milliseconds instead of seconds
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 706 km
+Distance totale    : 706757 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=824kg : Depot -> C44(arr=62,zone=OK) -> C45(arr=108,zone=OK) -> C47(arr=135,zone=OK) -> C48(arr=163,zone=OK) -> C49(arr=179,zone=OK) -> Depot
+V14 [Camion      5000kg] charge=74kg : Depot -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 14 / 18
+% time elapsed: 2s 475msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 704 km
+Distance totale    : 704736 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=824kg : Depot -> C44(arr=62,zone=OK) -> C45(arr=108,zone=OK) -> C47(arr=145,zone=OK) -> C48(arr=128,zone=OK) -> C49(arr=170,zone=OK) -> Depot
+V14 [Camion      5000kg] charge=74kg : Depot -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 14 / 18
+% time elapsed: 2s 499msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 702 km
+Distance totale    : 702991 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=824kg : Depot -> C44(arr=62,zone=OK) -> C45(arr=108,zone=OK) -> C47(arr=171,zone=OK) -> C48(arr=128,zone=OK) -> C49(arr=144,zone=OK) -> Depot
+V14 [Camion      5000kg] charge=74kg : Depot -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 14 / 18
+% time elapsed: 2s 519msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 702 km
+Distance totale    : 702076 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=824kg : Depot -> C44(arr=62,zone=OK) -> C45(arr=126,zone=OK) -> C47(arr=98,zone=OK) -> C48(arr=146,zone=OK) -> C49(arr=162,zone=OK) -> Depot
+V14 [Camion      5000kg] charge=74kg : Depot -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 14 / 18
+% time elapsed: 2s 549msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 701 km
+Distance totale    : 701951 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=824kg : Depot -> C44(arr=62,zone=OK) -> C45(arr=140,zone=OK) -> C47(arr=98,zone=OK) -> C48(arr=126,zone=OK) -> C49(arr=163,zone=OK) -> Depot
+V14 [Camion      5000kg] charge=74kg : Depot -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 14 / 18
+% time elapsed: 2s 570msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 685 km
+Distance totale    : 685251 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=898kg : Depot -> C44(arr=62,zone=OK) -> C45(arr=148,zone=OK) -> C47(arr=211,zone=OK) -> C48(arr=168,zone=OK) -> C49(arr=184,zone=OK) -> C50(arr=93,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2s 683msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 684 km
+Distance totale    : 684926 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=898kg : Depot -> C44(arr=62,zone=OK) -> C45(arr=169,zone=OK) -> C47(arr=206,zone=OK) -> C48(arr=189,zone=OK) -> C49(arr=142,zone=OK) -> C50(arr=93,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2s 706msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 684 km
+Distance totale    : 684221 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=898kg : Depot -> C44(arr=206,zone=OK) -> C45(arr=94,zone=OK) -> C47(arr=131,zone=OK) -> C48(arr=114,zone=OK) -> C49(arr=61,zone=OK) -> C50(arr=178,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2s 761msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 678 km
+Distance totale    : 678363 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=898kg : Depot -> C44(arr=106,zone=OK) -> C45(arr=152,zone=OK) -> C47(arr=215,zone=OK) -> C48(arr=172,zone=OK) -> C49(arr=188,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2s 788msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 678 km
+Distance totale    : 678136 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1053kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C42(arr=198,zone=OK) -> C43(arr=228,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=898kg : Depot -> C44(arr=106,zone=OK) -> C45(arr=173,zone=OK) -> C47(arr=210,zone=OK) -> C48(arr=193,zone=OK) -> C49(arr=146,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2s 811msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 676 km
+Distance totale    : 676814 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1035kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C43(arr=224,zone=OK) -> C44(arr=198,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=916kg : Depot -> C42(arr=110,zone=OK) -> C45(arr=157,zone=OK) -> C47(arr=220,zone=OK) -> C48(arr=177,zone=OK) -> C49(arr=193,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 21s 389msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 676 km
+Distance totale    : 676718 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1035kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C43(arr=224,zone=OK) -> C44(arr=198,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=916kg : Depot -> C42(arr=110,zone=OK) -> C45(arr=179,zone=OK) -> C47(arr=216,zone=OK) -> C48(arr=199,zone=OK) -> C49(arr=152,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 21s 534msec
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 676 km
+Distance totale    : 676697 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1035kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=176,zone=OK) -> C43(arr=224,zone=OK) -> C44(arr=198,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=916kg : Depot -> C42(arr=110,zone=OK) -> C45(arr=168,zone=OK) -> C47(arr=218,zone=OK) -> C48(arr=154,zone=OK) -> C49(arr=191,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 21s 554msec
+----------
+% Pruned 49992 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49993 learnt clauses
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 676 km
+Distance totale    : 676420 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1035kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=204,zone=OK) -> C43(arr=221,zone=OK) -> C44(arr=177,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=916kg : Depot -> C42(arr=110,zone=OK) -> C45(arr=157,zone=OK) -> C47(arr=220,zone=OK) -> C48(arr=177,zone=OK) -> C49(arr=193,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2m 54s
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 676 km
+Distance totale    : 676324 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1035kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=204,zone=OK) -> C43(arr=221,zone=OK) -> C44(arr=177,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=916kg : Depot -> C42(arr=110,zone=OK) -> C45(arr=179,zone=OK) -> C47(arr=216,zone=OK) -> C48(arr=199,zone=OK) -> C49(arr=152,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2m 54s
+----------
+
+========================================================
+   SOLUTION VRPTW - CP PUR (sans LNS)
+   Solveur : Chuffed
+========================================================
+Distance totale    : 676 km
+Distance totale    : 676303 m
+--------------------------------------------------------
+TOURNEES PAR VEHICULE :
+--------------------------------------------------------
+V1 [Triporteur   300kg] charge=268kg : Depot -> C1(arr=14,zone=OK) -> C3(arr=62,zone=OK) -> C4(arr=93,zone=OK) -> Depot
+V2 [Triporteur   300kg] charge=290kg : Depot -> C2(arr=34,zone=OK) -> C6(arr=102,zone=OK) -> Depot
+V3 [Triporteur   300kg] charge=288kg : Depot -> C5(arr=93,zone=OK) -> C8(arr=114,zone=OK) -> C9(arr=144,zone=OK) -> Depot
+V4 [Triporteur   300kg] charge=280kg : Depot -> C7(arr=76,zone=OK) -> C22(arr=113,zone=OK) -> Depot
+V5 [Triporteur   300kg] charge=292kg : Depot -> C10(arr=69,zone=OK) -> C13(arr=111,zone=OK) -> C26(arr=141,zone=OK) -> Depot
+V6 [Triporteur   300kg] charge=270kg : Depot -> C11(arr=129,zone=OK) -> C30(arr=165,zone=OK) -> Depot
+V7 [Triporteur   300kg] charge=275kg : Depot -> C12(arr=117,zone=OK) -> C34(arr=153,zone=OK) -> Depot
+V8 [Triporteur   300kg] charge=296kg : Depot -> C15(arr=106,zone=OK) -> C39(arr=156,zone=OK) -> Depot
+V9 [Fourgon     1200kg] charge=975kg : Depot -> C14(arr=115,zone=OK) -> C16(arr=151,zone=OK) -> C17(arr=173,zone=OK) -> C19(arr=194,zone=OK) -> C20(arr=233,zone=OK) -> C25(arr=252,zone=OK) -> Depot
+V10 [Fourgon     1200kg] charge=870kg : Depot -> C18(arr=79,zone=OK) -> C21(arr=105,zone=OK) -> C23(arr=124,zone=OK) -> C24(arr=148,zone=OK) -> C27(arr=180,zone=OK) -> C32(arr=207,zone=OK) -> C38(arr=231,zone=OK) -> Depot
+V11 [Fourgon     1200kg] charge=937kg : Depot -> C28(arr=60,zone=OK) -> C29(arr=100,zone=OK) -> C31(arr=140,zone=OK) -> C33(arr=168,zone=OK) -> C36(arr=204,zone=OK) -> C46(arr=242,zone=OK) -> Depot
+V12 [Fourgon     1200kg] charge=1035kg : Depot -> C35(arr=78,zone=OK) -> C37(arr=109,zone=OK) -> C40(arr=159,zone=OK) -> C41(arr=204,zone=OK) -> C43(arr=221,zone=OK) -> C44(arr=177,zone=OK) -> Depot
+V13 [Fourgon     1200kg] charge=916kg : Depot -> C42(arr=110,zone=OK) -> C45(arr=168,zone=OK) -> C47(arr=218,zone=OK) -> C48(arr=154,zone=OK) -> C49(arr=191,zone=OK) -> C50(arr=78,zone=OK) -> Depot
+--------------------------------------------------------
+Vehicules utilises : 13 / 18
+% time elapsed: 2m 54s
+----------
+*** INTERRUPTED ***
+%%%mzn-stat: nSolutions=16
+%%%mzn-stat-end
+Finished in 5m 51s.

@@ -1,0 +1,2237 @@
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-cp-sat.exe for solving, parameters: -i -p 2 -s -v 
+%% File C:\\Users\\ayaak\\AppData\\Local\\Temp\\tmp290E.tmp.fzn parsed in 48 ms
+%% Model C:\\Users\\ayaak\\AppData\\Local\\Temp\\tmp290E.tmp
+%%   - integer variables:787
+%%   - int_lin_eq: 151
+%%   - int_lin_le: 96
+%%   - ortools_array_int_element: 318
+%%   - ortools_array_var_int_element: 100
+%%   - ortools_bin_packing_capa: 1
+%%   - ortools_circuit: 1
+%%   - ortools_inverse: 1
+%%   - Minimization problem
+%%   - #var_op_value_reif cached: 0
+%%   - #var_op_var_reif cached: 0
+%%   - #var_op_var_imp cached: 0
+%%   - #full domain encodings: 50
+%% Bumping number of workers from 2 to 8
+%% Starting CP-SAT solver v9.15.9999
+%% Parameters: log_search_progress: true log_to_stdout: false max_domain_size_when_encoding_eq_neq_constraints: 32 num_workers: 8
+%% Initial optimization model 'C:\\Users\\ayaak\\AppData\\Local\\Temp\\tmp290E.tmp': (model_fingerprint: 0x933834063cf1f576)
+%% Search strategy: on 68 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MIN_VALUE
+%% Search strategy: on 68 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MIN_VALUE
+%% Search strategy: on 68 variables, CHOOSE_LOWEST_MIN, SELECT_MIN_VALUE
+%% #Variables: 6'179 (#ints: 1 in objective) (6'078 primary variables)
+%%   - 5'391 Booleans in [0,1]
+%%   - 288 different domains in [0,1641998] with a largest complexity of 2.
+%%   - 37 constants in {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18} 
+%% #kCircuit: 1
+%% #kElement: 418
+%% #kEmpty: 1
+%% #kInverse: 1
+%% #kLinear1: 10'782 (#enforced: 10'782)
+%% #kLinear2: 96
+%% #kLinear3: 100
+%% #kLinearN: 19 (#terms: 904)
+%% #kTable: 50
+%% Starting presolve at 0.03s
+%%   4.32e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.56e-01s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=6 #num_dual_strengthening=1 
+%%   3.79e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExtractEncodingFromLinear] 
+%%   5.23e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateColumns] 
+%%   8.18e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%% [Symmetry] Graph for symmetry has 101'356 nodes and 169'704 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0344005 dtime: 0.0227371
+%% [SAT presolve] num removable Booleans: 0 / 17'373
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:835 literals:1'670 vars:1'670 one_side_vars:1670 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [0.0002021s] clauses:835 literals:1'670 vars:1'670 one_side_vars:1670 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [0.0015122s] clauses:835 literals:1'670 vars:1'670 one_side_vars:1670 simple_definition:0 singleton_clauses:0
+%%   2.11e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=2'010 
+%%   1.95e+00s  1.00e+00d *[operations_research::sat::CpModelPresolver::Probe] #probed=49'529 #fixed_bools=1'027 #new_bounds=151 #equiv=792 #new_binary_clauses=423'963 
+%%   3.05e-02s  2.96e-02d  [MaxClique] 
+%%   1.03e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   5.49e-01s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   1.23e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   7.52e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=99 
+%%   5.42e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=1'820 
+%%   1.04e-03s  3.00e-06d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=78 
+%%   1.65e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   9.42e-03s  1.12e-04d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=4'105 #num_inclusions=8 
+%%   7.25e-03s  2.95e-05d  [operations_research::sat::CpModelPresolver::TransformClausesToExactlyOne] #num_amos=1'728 #num_clauses=1'552 #num_checked=1'552 
+%%   2.92e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectEncodedComplexDomains] 
+%%   1.58e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   5.10e-02s  1.60e-02d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   8.50e-03s  8.65e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   9.85e-04s  3.90e-06d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=18 
+%%   2.52e-03s  2.33e-05d  [operations_research::sat::CpModelPresolver::MergeClauses] #num_collisions=480 #num_merges=480 #num_saved_literals=960 
+%%   1.38e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.44e-01s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   1.07e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.24e-01s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   7.09e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateColumns] 
+%%   5.83e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=68 
+%% [Symmetry] Graph for symmetry has 49'527 nodes and 83'196 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0150631 dtime: 0.00979158
+%% [SAT presolve] num removable Booleans: 0 / 9'292
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:3'272 literals:8'096 vars:1'767 one_side_vars:1053 simple_definition:474 singleton_clauses:0
+%% [SAT presolve] [0.0005113s] clauses:3'272 literals:8'096 vars:1'767 one_side_vars:1053 simple_definition:474 singleton_clauses:0
+%% [SAT presolve] [0.0014462s] clauses:3'272 literals:8'096 vars:1'767 one_side_vars:1053 simple_definition:474 singleton_clauses:0
+%%   2.09e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=1'820 
+%%   9.90e-01s  4.93e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=41'435 #fixed_bools=47 #new_bounds=45 #equiv=14 #new_binary_clauses=126'909 
+%%   1.57e-02s  1.78e-02d  [MaxClique] Merged 1'728 constraints with 3'608 literals into 945 constraints with 2'509 literals
+%%   7.07e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.32e-01s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   1.03e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   5.75e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   8.91e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=1'785 
+%%   1.11e-03s  3.00e-06d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=78 
+%%   1.63e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   7.24e-03s  8.31e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=3'170 #num_inclusions=8 
+%%   6.36e-03s  1.15e-05d  [operations_research::sat::CpModelPresolver::TransformClausesToExactlyOne] #num_amos=1'647 #num_clauses=720 #num_checked=720 
+%%   2.36e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectEncodedComplexDomains] 
+%%   3.20e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   4.48e-02s  1.50e-02d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   6.02e-03s  8.22e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   9.16e-04s  3.90e-06d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=18 
+%%   2.11e-03s  1.08e-05d  [operations_research::sat::CpModelPresolver::MergeClauses] #num_collisions=320 #num_merges=320 #num_saved_literals=640 
+%%   1.03e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.12e-01s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   7.80e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.02e-01s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   4.25e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateColumns] 
+%%   6.94e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%% [Symmetry] Graph for symmetry has 48'140 nodes and 79'229 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0156038 dtime: 0.00935005
+%% [SAT presolve] num removable Booleans: 0 / 9'016
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:2'307 literals:5'334 vars:1'762 one_side_vars:1426 simple_definition:184 singleton_clauses:0
+%% [SAT presolve] [0.0005672s] clauses:2'307 literals:5'334 vars:1'762 one_side_vars:1426 simple_definition:184 singleton_clauses:0
+%% [SAT presolve] [0.001447s] clauses:2'307 literals:5'334 vars:1'762 one_side_vars:1426 simple_definition:184 singleton_clauses:0
+%%   1.77e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=1'785 
+%%   9.41e-01s  4.56e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=41'297 #fixed_bools=47 #new_bounds=13 #equiv=19 #new_binary_clauses=119'496 
+%%   1.61e-02s  1.85e-02d  [MaxClique] 
+%%   1.04e-02s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.07e-01s  0.00e+00d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   9.67e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   6.78e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=2 
+%%   6.80e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=1'785 
+%%   3.07e-03s  3.00e-06d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=78 
+%%   3.48e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   7.04e-03s  8.21e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=3'149 #num_inclusions=10 
+%%   9.26e-03s  1.15e-05d  [operations_research::sat::CpModelPresolver::TransformClausesToExactlyOne] #num_amos=891 #num_clauses=720 #num_checked=720 
+%%   3.04e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectEncodedComplexDomains] 
+%%   2.16e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   4.97e-02s  1.46e-02d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   5.89e-03s  8.05e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   3.02e-03s  3.90e-06d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=18 
+%%   3.10e-03s  1.08e-05d  [operations_research::sat::CpModelPresolver::MergeClauses] #num_collisions=320 #num_merges=320 #num_saved_literals=640 
+%%   6.27e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.24e-01s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   3.02e-03s  0.00e+00d  [MergeNoOverlap] 
+%%   1.27e-03s  0.00e+00d  [MergeNoOverlap2D] 
+%%   4.33e-02s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExpandObjective] #entries=975'636 #tight_variables=17'512 #tight_constraints=1'528 #expands=70 
+%% Presolve summary:
+%%   - 7567 affine relations were detected.
+%%   - rule 'TODO dual: only one blocking constraint?' was applied 234 times.
+%%   - rule 'affine: fixed' was applied 2 times.
+%%   - rule 'affine: new relation' was applied 7'567 times.
+%%   - rule 'at_most_one: removed literals' was applied 835 times.
+%%   - rule 'at_most_one: resolved two constraints with opposite literal' was applied 71 times.
+%%   - rule 'at_most_one: size one' was applied 802 times.
+%%   - rule 'at_most_one: transformed into max clique' was applied 1 time.
+%%   - rule 'bool_or: always true' was applied 80 times.
+%%   - rule 'bool_or: implications' was applied 752 times.
+%%   - rule 'bool_or: only one literal' was applied 65 times.
+%%   - rule 'bool_or: removed enforcement literal' was applied 1'552 times.
+%%   - rule 'circuit: removed false arcs' was applied 4 times.
+%%   - rule 'deductions: 47257 stored' was applied 1 time.
+%%   - rule 'dual: make encoding equiv' was applied 835 times.
+%%   - rule 'duplicate: removed constraint' was applied 169 times.
+%%   - rule 'element: expanded' was applied 100 times.
+%%   - rule 'element: expanded value element' was applied 178 times.
+%%   - rule 'element: fixed index' was applied 29 times.
+%%   - rule 'element: one value array' was applied 77 times.
+%%   - rule 'element: reduce target domain' was applied 500 times.
+%%   - rule 'element: reduced index domain ' was applied 11 times.
+%%   - rule 'element: removed as the target is not used elsewhere' was applied 17 times.
+%%   - rule 'element: rewrite as affine constraint' was applied 17 times.
+%%   - rule 'enforcement: false literal' was applied 2'228 times.
+%%   - rule 'enforcement: true literal' was applied 1'791 times.
+%%   - rule 'exactly_one: removed literals' was applied 383 times.
+%%   - rule 'exactly_one: satisfied' was applied 95 times.
+%%   - rule 'exactly_one: simplified objective' was applied 23 times.
+%%   - rule 'exactly_one: size two' was applied 6 times.
+%%   - rule 'exactly_one: x and not(x)' was applied 974 times.
+%%   - rule 'inverse: expanded' was applied 1 time.
+%%   - rule 'inverse: reduce domains' was applied 1 time.
+%%   - rule 'linear1: always true' was applied 690 times.
+%%   - rule 'linear2: convert implied ax + by == cte to clauses' was applied 97 times.
+%%   - rule 'linear: advanced coefficient strenghtening' was applied 20 times.
+%%   - rule 'linear: always true' was applied 1'147 times.
+%%   - rule 'linear: doubleton free' was applied 40 times.
+%%   - rule 'linear: empty' was applied 29 times.
+%%   - rule 'linear: extracted at most one (max)' was applied 8 times.
+%%   - rule 'linear: extracted enforcement literal' was applied 55 times.
+%%   - rule 'linear: fixed or dup variables' was applied 134 times.
+%%   - rule 'linear: infeasible' was applied 65 times.
+%%   - rule 'linear: reduced variable domains' was applied 967 times.
+%%   - rule 'linear: remapped using affine relations' was applied 56 times.
+%%   - rule 'linear: simplified rhs' was applied 17'609 times.
+%%   - rule 'linear: variable substitution 0' was applied 1 time.
+%%   - rule 'linear: variable substitution 1' was applied 40 times.
+%%   - rule 'new_bool: integer encoding' was applied 12'037 times.
+%%   - rule 'new_bool: var with 2 values' was applied 11 times.
+%%   - rule 'new_bool: with clause' was applied 537 times.
+%%   - rule 'objective: expanded via tight equality' was applied 70 times.
+%%   - rule 'objective: shifted cost with exactly ones' was applied 933 times.
+%%   - rule 'presolve: 1759 unused variables removed.' was applied 1 time.
+%%   - rule 'presolve: iteration' was applied 3 times.
+%%   - rule 'probing: bool_or reduced to implication' was applied 832 times.
+%%   - rule 'setppc: removed dominated constraints' was applied 2 times.
+%%   - rule 'table: expanded positive constraint' was applied 10 times.
+%%   - rule 'table: expanded positive constraint with two variables' was applied 40 times.
+%%   - rule 'table: reduce variable domain' was applied 151 times.
+%%   - rule 'table: remove expressions' was applied 40 times.
+%%   - rule 'table: remove tuples' was applied 151 times.
+%%   - rule 'table: reused literals' was applied 10 times.
+%%   - rule 'variables with 2 values: create encoding literal' was applied 11 times.
+%%   - rule 'variables with 2 values: new affine relation' was applied 11 times.
+%%   - rule 'variables: add encoding constraint' was applied 16'528 times.
+%%   - rule 'variables: canonicalize domain' was applied 17 times.
+%%   - rule 'variables: detect fully reified value encoding' was applied 5'391 times.
+%%   - rule 'variables: detect half reified value encoding' was applied 11'617 times.
+%%   - rule 'variables: detected encoding of a complex domain with multiple linear1' was applied 537 times.
+%%   - rule 'variables: detected fully encoded domain' was applied 8 times.
+%%   - rule 'variables: only used in objective and in encodings' was applied 68 times.
+%%   - rule 'variables: only used in value and order encodings' was applied 188 times.
+%% Presolved optimization model 'C:\\Users\\ayaak\\AppData\\Local\\Temp\\tmp290E.tmp': (model_fingerprint: 0x88db7ffe6fecb22e)
+%% Search strategy: on 48 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MIN_VALUE
+%% Search strategy: on 50 variables, CHOOSE_LOWEST_MIN, SELECT_MIN_VALUE
+%% #Variables: 8'431 (#bools: 3'106 in objective) (7'066 primary variables)
+%%   - 8'173 Booleans in [0,1]
+%%   - 160 different domains in [0,265] with a largest complexity of 16.
+%% #kAtMostOne: 56 (#literals: 653)
+%% #kBoolAnd: 835 (#enforced: 835) (#literals: 1'670)
+%% #kBoolAndClauses: 320 (#enforced: 320 #multi: 320) (#literals: 1'280)
+%% #kBoolOr: 80 (#literals: 240)
+%% #kCircuit: 1
+%% #kExactlyOne: 1'518 (#literals: 17'502)
+%% #kLinear1: 10'121 (#enforced: 10'121)
+%% #kLinear2: 4'301 (#enforced: 4'301)
+%% #kLinear3: 20
+%% #kLinearN: 58 (#enforced: 5 #multi: 5) (#terms: 940)
+%% [Symmetry] Graph for symmetry has 37'298 nodes and 76'298 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0159158 dtime: 0.00906895
+%% Preloading model.
+%% #Bound   6.74s best:inf   next:[78341,1584584] initial_domain
+%% #Model   6.77s var:8431/8431 constraints:17310/17310
+%% Starting search at 6.78s with 8 workers.
+%% 6 full problem subsolvers: [core, default_lp, fixed, max_lp, no_lp, quick_restart]
+%% 2 first solution subsolvers: [fj, fs_random_no_lp]
+%% 11 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, ls, rins/rens, rnd_cst_lns, rnd_var_lns, routing_path_lns, routing_random_lns]
+%% 3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+%% #Bound  12.48s best:inf   next:[78971,1584584] fixed
+%% #Bound  12.77s best:inf   next:[80110,1584584] fixed
+%% #1      13.61s best:733936 next:[80110,733935] rens_pump_lns (d=5.00e-01 s=32 t=0.10 p=0.00 stall=0 h=base)
+%%%mzn-stat: boolVariables=0
+%%%mzn-stat: failures=0
+%%%mzn-stat: objective=733936
+%%%mzn-stat: objectiveBound=80110
+%%%mzn-stat: propagations=0
+%%%mzn-stat: solveTime=13.6074
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 733936 m
+
+successor = [58, 3, 4, 68, 51, 26, 46, 6, 10, 67, 32, 15, 31, 11, 33, 20, 16, 43, 30, 66, 18, 24, 25, 21, 65, 61, 29, 48, 34, 27, 63, 39, 47, 62, 57, 38, 40, 53, 59, 60, 45, 44, 56, 41, 55, 54, 64, 50, 52, 49, 42, 37, 35, 23, 13, 9, 1, 7, 22, 19, 14, 5, 12, 36, 17, 8, 2, 28]
+vehicle   = [1, 17, 17, 17, 12, 16, 8, 16, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 4, 16, 10, 18, 10, 10, 5, 11, 13, 10, 3, 14, 2, 14, 11, 2, 12, 12, 9, 12, 12, 8, 13, 18, 18, 18, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 93, 95, 76, 114, 144, 127, 129, 117, 111, 152, 106, 58, 177, 79, 134, 146, 105, 66, 124, 89, 128, 129, 104, 155, 100, 149, 142, 180, 179, 102, 78, 81, 109, 157, 110, 146, 107, 198, 124, 164, 119, 205, 123, 175, 148, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=257 kg
+V3 (type=1, cap=300) : charge=41 kg
+V4 (type=1, cap=300) : charge=179 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=162 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=300 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=675 kg
+V11 (type=2, cap=1200) : charge=493 kg
+V12 (type=2, cap=1200) : charge=797 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=346 kg
+V15 (type=3, cap=5000) : charge=414 kg
+V16 (type=3, cap=5000) : charge=511 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=555 kg
+% time elapsed: 14s 245msec
+----------
+%% #Bound  14.63s best:733936 next:[84968,733935] max_lp
+%% #Bound  17.18s best:733936 next:[87577,733935] max_lp
+%% #Bound  18.57s best:733936 next:[91967,733935] max_lp
+%% #2      19.17s best:733790 next:[91967,733789] rnd_var_lns (d=7.07e-01 s=43 t=0.10 p=1.00 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=733790
+%%%mzn-stat: objectiveBound=91967
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=19.1742
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 733790 m
+
+successor = [58, 3, 4, 68, 51, 26, 46, 6, 10, 67, 32, 15, 31, 11, 33, 20, 16, 43, 30, 66, 18, 24, 59, 21, 63, 61, 29, 48, 34, 27, 64, 39, 47, 62, 65, 38, 40, 53, 25, 60, 45, 44, 56, 41, 57, 54, 52, 50, 55, 49, 42, 37, 35, 23, 13, 9, 1, 7, 22, 19, 14, 5, 12, 36, 17, 8, 2, 28]
+vehicle   = [1, 17, 17, 17, 12, 16, 8, 16, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 16, 10, 18, 10, 10, 5, 11, 13, 10, 3, 14, 2, 14, 11, 2, 12, 12, 9, 12, 12, 8, 13, 18, 18, 18, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 93, 95, 76, 114, 144, 127, 129, 209, 111, 152, 107, 86, 177, 79, 135, 146, 105, 66, 124, 192, 128, 129, 104, 155, 100, 241, 142, 180, 179, 102, 78, 81, 109, 157, 110, 146, 107, 198, 124, 164, 119, 205, 123, 175, 148, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=257 kg
+V3 (type=1, cap=300) : charge=41 kg
+V4 (type=1, cap=300) : charge=72 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=162 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=300 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=675 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=797 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=346 kg
+V15 (type=3, cap=5000) : charge=414 kg
+V16 (type=3, cap=5000) : charge=511 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=555 kg
+% time elapsed: 19s 811msec
+----------
+%% #3      20.82s best:725210 next:[91967,725209] graph_var_lns (d=7.07e-01 s=42 t=0.10 p=1.00 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=725210
+%%%mzn-stat: objectiveBound=91967
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=20.8171
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 725210 m
+
+successor = [55, 61, 4, 2, 9, 64, 46, 26, 10, 68, 32, 15, 31, 11, 33, 20, 16, 43, 30, 47, 18, 24, 25, 21, 36, 6, 29, 48, 34, 27, 56, 39, 58, 67, 38, 59, 40, 65, 1, 60, 45, 44, 53, 41, 66, 54, 57, 50, 63, 49, 42, 37, 62, 23, 13, 5, 52, 7, 22, 19, 14, 51, 12, 35, 17, 8, 3, 28]
+vehicle   = [1, 17, 17, 17, 6, 16, 8, 16, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 4, 16, 10, 18, 10, 10, 5, 11, 13, 10, 14, 4, 2, 14, 11, 2, 12, 12, 9, 12, 12, 8, 15, 18, 18, 18, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 38, 62, 42, 166, 95, 92, 128, 158, 127, 129, 117, 111, 152, 106, 58, 177, 79, 179, 146, 105, 66, 124, 89, 128, 129, 104, 155, 100, 149, 142, 180, 179, 103, 132, 81, 127, 157, 110, 146, 107, 198, 124, 164, 119, 222, 123, 175, 148, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=257 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=287 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=196 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=300 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=675 kg
+V11 (type=2, cap=1200) : charge=493 kg
+V12 (type=2, cap=1200) : charge=763 kg
+V13 (type=2, cap=1200) : charge=675 kg
+V14 (type=3, cap=5000) : charge=279 kg
+V15 (type=3, cap=5000) : charge=608 kg
+V16 (type=3, cap=5000) : charge=511 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=555 kg
+% time elapsed: 21s 454msec
+----------
+%% #Bound  21.32s best:725210 next:[92330,725209] max_lp
+%% #4      21.52s best:657018 next:[92330,657017] graph_dec_lns (d=7.07e-01 s=44 t=0.10 p=1.00 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=657018
+%%%mzn-stat: objectiveBound=92330
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=21.5177
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 657018 m
+
+successor = [4, 3, 50, 68, 51, 57, 46, 48, 10, 6, 32, 15, 31, 11, 33, 20, 16, 43, 30, 66, 18, 24, 54, 21, 67, 61, 29, 23, 34, 27, 63, 39, 47, 26, 65, 38, 40, 8, 25, 60, 45, 44, 56, 41, 59, 49, 64, 58, 55, 7, 42, 37, 35, 52, 13, 9, 1, 53, 22, 19, 14, 5, 12, 36, 17, 62, 2, 28]
+vehicle   = [1, 17, 17, 1, 12, 6, 17, 14, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 18, 9, 11, 10, 10, 18, 10, 10, 5, 11, 13, 10, 3, 14, 2, 14, 11, 2, 12, 12, 9, 12, 12, 17, 13, 14, 17, 17, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 169, 127, 154, 114, 144, 127, 129, 209, 111, 152, 107, 86, 177, 83, 135, 146, 105, 131, 124, 192, 209, 129, 104, 155, 100, 241, 142, 180, 179, 102, 78, 81, 109, 157, 110, 146, 107, 198, 124, 164, 174, 206, 188, 194, 97, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=112 kg
+V2 (type=1, cap=300) : charge=257 kg
+V3 (type=1, cap=300) : charge=41 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=797 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=763 kg
+V15 (type=3, cap=5000) : charge=414 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=818 kg
+V18 (type=3, cap=5000) : charge=221 kg
+% time elapsed: 22s 154msec
+----------
+%% #5      23.73s best:656518 next:[92330,656517] rnd_cst_lns (d=7.07e-01 s=46 t=0.10 p=1.00 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=656518
+%%%mzn-stat: objectiveBound=92330
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=23.7266
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 656518 m
+
+successor = [4, 3, 50, 68, 51, 57, 46, 48, 10, 6, 32, 15, 31, 11, 33, 20, 16, 43, 30, 66, 18, 24, 54, 21, 67, 61, 29, 23, 34, 27, 64, 39, 47, 26, 65, 38, 40, 7, 25, 60, 45, 44, 63, 41, 59, 49, 56, 58, 55, 8, 42, 37, 35, 1, 13, 9, 52, 53, 22, 19, 14, 5, 12, 62, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 1, 12, 6, 18, 17, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 3, 18, 2, 18, 11, 2, 12, 12, 9, 12, 12, 18, 13, 17, 18, 17, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 168, 143, 154, 114, 144, 127, 129, 209, 111, 152, 107, 86, 177, 79, 135, 146, 105, 131, 124, 192, 209, 129, 104, 155, 100, 241, 142, 180, 179, 102, 78, 81, 109, 157, 110, 146, 107, 198, 124, 164, 174, 206, 188, 194, 97, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=112 kg
+V2 (type=1, cap=300) : charge=257 kg
+V3 (type=1, cap=300) : charge=41 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=797 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=414 kg
+V16 (type=3, cap=5000) : charge=221 kg
+V17 (type=3, cap=5000) : charge=865 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 24s 362msec
+----------
+%% #6      29.38s best:612176 next:[92330,612175] graph_var_lns (d=6.92e-01 s=73 t=0.10 p=0.67 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=612176
+%%%mzn-stat: objectiveBound=92330
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=29.3761
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 612176 m
+
+successor = [4, 3, 50, 65, 51, 66, 46, 48, 10, 6, 32, 15, 31, 11, 33, 20, 16, 43, 30, 56, 18, 24, 64, 21, 53, 63, 29, 23, 34, 27, 58, 39, 47, 26, 37, 38, 40, 7, 25, 67, 45, 44, 61, 41, 68, 49, 57, 59, 55, 8, 42, 62, 54, 1, 13, 9, 52, 35, 22, 19, 14, 5, 12, 60, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 1, 12, 6, 18, 17, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 12, 18, 13, 17, 18, 17, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 55, 78, 62, 42, 168, 143, 178, 114, 144, 127, 129, 209, 111, 152, 107, 86, 177, 79, 135, 146, 105, 131, 124, 192, 209, 129, 104, 155, 100, 241, 142, 180, 179, 103, 78, 131, 109, 157, 160, 146, 107, 198, 124, 164, 174, 205, 212, 194, 138, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=112 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=797 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=414 kg
+V16 (type=3, cap=5000) : charge=221 kg
+V17 (type=3, cap=5000) : charge=865 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 30s 12msec
+----------
+%% #7      31.53s best:611467 next:[92330,611466] graph_arc_lns (d=6.92e-01 s=74 t=0.10 p=0.67 stall=3 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=611467
+%%%mzn-stat: objectiveBound=92330
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=31.5343
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 611467 m
+
+successor = [4, 3, 50, 65, 51, 68, 46, 48, 10, 6, 32, 15, 31, 11, 33, 20, 16, 43, 30, 66, 18, 24, 59, 21, 64, 63, 29, 23, 34, 27, 61, 39, 47, 57, 37, 38, 40, 7, 25, 67, 45, 44, 58, 41, 56, 49, 55, 26, 53, 8, 42, 62, 54, 1, 13, 9, 52, 35, 22, 19, 14, 5, 12, 60, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 1, 12, 6, 18, 17, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 17, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 12, 18, 13, 17, 18, 17, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 168, 143, 137, 114, 144, 127, 129, 209, 111, 152, 107, 58, 177, 83, 135, 146, 105, 131, 124, 192, 209, 129, 104, 155, 100, 241, 142, 180, 179, 103, 78, 131, 109, 157, 160, 146, 107, 198, 124, 164, 174, 205, 183, 194, 97, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=112 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=675 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=797 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=414 kg
+V16 (type=3, cap=5000) : charge=221 kg
+V17 (type=3, cap=5000) : charge=1042 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 32s 173msec
+----------
+%% #8      32.51s best:611061 next:[92330,611060] graph_cst_lns (d=6.92e-01 s=75 t=0.10 p=0.67 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=611061
+%%%mzn-stat: objectiveBound=92330
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=32.5105
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 611061 m
+
+successor = [4, 3, 50, 65, 51, 9, 46, 48, 10, 1, 32, 15, 31, 11, 33, 20, 16, 43, 30, 62, 18, 24, 58, 21, 56, 63, 29, 23, 34, 27, 66, 39, 47, 26, 37, 38, 40, 7, 25, 67, 45, 44, 61, 41, 57, 49, 64, 59, 55, 8, 42, 53, 54, 60, 13, 6, 52, 35, 22, 19, 14, 5, 12, 68, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 1, 12, 6, 18, 17, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 12, 18, 13, 17, 18, 17, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 78, 62, 42, 93, 143, 178, 114, 144, 127, 129, 209, 111, 152, 107, 58, 186, 79, 135, 155, 105, 131, 124, 192, 209, 129, 104, 155, 100, 241, 142, 180, 179, 103, 78, 131, 109, 157, 160, 146, 107, 207, 124, 164, 174, 205, 212, 194, 138, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=112 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=797 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=414 kg
+V16 (type=3, cap=5000) : charge=221 kg
+V17 (type=3, cap=5000) : charge=865 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 33s 147msec
+----------
+%% #9      33.46s best:610208 next:[92330,610207] rnd_var_lns (d=7.21e-01 s=78 t=0.10 p=0.67 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=610208
+%%%mzn-stat: objectiveBound=92330
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=33.4634
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 610208 m
+
+successor = [4, 3, 50, 65, 51, 9, 46, 48, 10, 1, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 58, 21, 68, 63, 29, 23, 34, 27, 66, 39, 47, 26, 37, 38, 40, 7, 25, 67, 59, 44, 61, 41, 57, 49, 64, 56, 55, 8, 42, 53, 54, 60, 13, 6, 52, 35, 22, 19, 14, 5, 12, 62, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 1, 12, 6, 18, 17, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 17, 18, 17, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 93, 143, 178, 114, 144, 127, 129, 209, 111, 152, 107, 58, 186, 79, 146, 155, 105, 131, 124, 209, 209, 129, 104, 155, 100, 241, 142, 180, 179, 103, 78, 131, 109, 157, 160, 146, 107, 207, 124, 173, 174, 205, 212, 194, 138, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=112 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=221 kg
+V17 (type=3, cap=5000) : charge=865 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 34s 99msec
+----------
+%% #Bound  38.31s best:610208 next:[92663,610207] max_lp
+%% #Bound  40.37s best:610208 next:[95506,610207] max_lp
+%% #10     41.20s best:603887 next:[95506,603886] rins_pump_lns (d=5.38e-01 s=95 t=0.10 p=0.50 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=603887
+%%%mzn-stat: objectiveBound=95506
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=41.1979
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 603887 m
+
+successor = [65, 3, 4, 64, 51, 9, 46, 48, 10, 59, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 60, 21, 57, 63, 29, 50, 34, 27, 66, 39, 47, 26, 37, 38, 40, 7, 25, 1, 55, 44, 61, 41, 67, 49, 58, 68, 56, 8, 42, 53, 54, 23, 13, 6, 52, 35, 22, 19, 14, 5, 12, 62, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 17, 12, 6, 18, 16, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 16, 18, 16, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 93, 143, 175, 114, 144, 127, 129, 209, 111, 152, 118, 58, 200, 79, 146, 169, 105, 67, 124, 192, 209, 129, 104, 155, 100, 241, 142, 180, 179, 102, 78, 130, 109, 157, 159, 146, 107, 221, 124, 173, 167, 205, 209, 187, 128, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=72 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=693 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 41s 834msec
+----------
+%% #11     42.98s best:594569 next:[95506,594568] rnd_cst_lns (d=5.54e-01 s=114 t=0.10 p=0.50 stall=0 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=594569
+%%%mzn-stat: objectiveBound=95506
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=42.9757
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 594569 m
+
+successor = [65, 3, 4, 23, 51, 9, 46, 48, 10, 59, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 60, 21, 57, 64, 29, 50, 34, 27, 66, 39, 47, 26, 37, 38, 40, 7, 25, 1, 55, 44, 61, 41, 67, 49, 58, 68, 63, 8, 42, 53, 54, 62, 13, 6, 52, 35, 22, 19, 14, 5, 12, 56, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 17, 12, 6, 18, 16, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 17, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 16, 18, 16, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 93, 143, 168, 114, 144, 127, 129, 209, 111, 152, 118, 86, 195, 79, 146, 164, 105, 131, 126, 192, 209, 129, 104, 155, 100, 241, 142, 180, 179, 102, 78, 130, 109, 157, 159, 146, 107, 216, 124, 173, 167, 205, 202, 187, 128, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=693 kg
+V17 (type=3, cap=5000) : charge=505 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 43s 616msec
+----------
+%% #Bound  45.06s best:594569 next:[98352,594568] max_lp
+%% #12     45.89s best:572374 next:[98352,572373] rins_pump_lns (d=7.00e-01 s=135 t=0.10 p=0.60 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=572374
+%%%mzn-stat: objectiveBound=98352
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=45.892
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 572374 m
+
+successor = [55, 3, 4, 52, 51, 9, 46, 63, 10, 60, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 48, 21, 58, 67, 29, 23, 34, 27, 54, 39, 47, 26, 37, 38, 40, 7, 25, 62, 66, 44, 57, 41, 68, 49, 1, 50, 59, 8, 42, 65, 61, 56, 13, 6, 64, 35, 22, 19, 14, 5, 12, 53, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 17, 12, 6, 18, 16, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 16, 18, 16, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 93, 143, 222, 114, 144, 127, 129, 209, 111, 152, 106, 58, 184, 79, 146, 153, 105, 131, 125, 192, 245, 129, 104, 155, 100, 241, 142, 180, 215, 102, 78, 130, 109, 157, 159, 146, 107, 205, 124, 173, 182, 205, 157, 202, 182, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=765 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=716 kg
+% time elapsed: 46s 529msec
+----------
+%% #Bound  47.13s best:572374 next:[98457,572373] max_lp
+%% #Bound  48.08s best:572374 next:[99024,572373] max_lp
+%% #13     49.98s best:570761 next:[99024,570760] graph_dec_lns (d=6.83e-01 s=156 t=0.10 p=0.60 stall=3 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=570761
+%%%mzn-stat: objectiveBound=99024
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=49.9815
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 570761 m
+
+successor = [56, 3, 4, 52, 51, 9, 46, 63, 10, 60, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 48, 21, 67, 66, 29, 23, 34, 27, 57, 39, 47, 26, 37, 38, 40, 7, 25, 62, 55, 44, 54, 41, 68, 8, 1, 50, 59, 49, 42, 65, 61, 58, 13, 6, 64, 35, 22, 19, 14, 5, 12, 53, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 17, 12, 6, 18, 18, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 16, 16, 16, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 93, 143, 212, 114, 144, 127, 129, 209, 111, 152, 106, 58, 200, 79, 134, 169, 105, 131, 125, 192, 245, 129, 104, 155, 100, 241, 142, 180, 215, 102, 78, 130, 109, 157, 159, 146, 107, 221, 124, 161, 182, 205, 157, 209, 182, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=869 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=627 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=854 kg
+% time elapsed: 50s 618msec
+----------
+%% #Bound  50.50s best:570761 next:[99103,570760] max_lp
+%% #Bound  51.81s best:570761 next:[99217,570760] max_lp
+%% #14     53.01s best:568966 next:[99217,568965] graph_cst_lns (d=7.70e-01 s=166 t=0.10 p=0.67 stall=2 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=568966
+%%%mzn-stat: objectiveBound=99217
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=53.0115
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 568966 m
+
+successor = [64, 3, 4, 56, 51, 9, 46, 63, 10, 60, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 48, 21, 67, 66, 29, 23, 34, 27, 57, 39, 47, 26, 37, 38, 40, 7, 25, 1, 54, 44, 52, 41, 68, 8, 49, 50, 59, 55, 42, 62, 61, 58, 13, 6, 65, 35, 22, 19, 14, 5, 12, 53, 17, 28, 2, 36]
+vehicle   = [1, 17, 17, 17, 12, 6, 18, 18, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 16, 13, 16, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 37, 62, 42, 99, 143, 212, 114, 144, 127, 129, 209, 111, 152, 106, 58, 200, 79, 134, 169, 105, 131, 125, 192, 245, 129, 104, 155, 100, 241, 142, 180, 215, 102, 78, 130, 109, 157, 159, 146, 107, 221, 124, 161, 182, 228, 157, 244, 182, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=557 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=854 kg
+% time elapsed: 53s 647msec
+----------
+%% #Bound  54.84s best:568966 next:[99480,568965] max_lp
+%% #15     57.83s best:566921 next:[99480,566920] graph_arc_lns (d=6.78e-01 s=196 t=0.10 p=0.57 stall=3 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=566921
+%%%mzn-stat: objectiveBound=99480
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=57.8252
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 566921 m
+
+successor = [64, 54, 4, 2, 51, 9, 46, 63, 10, 60, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 48, 21, 67, 68, 29, 23, 34, 27, 53, 39, 47, 26, 37, 38, 40, 7, 25, 1, 57, 44, 62, 41, 52, 8, 49, 50, 59, 55, 42, 66, 61, 58, 13, 6, 65, 35, 22, 19, 14, 5, 12, 56, 17, 28, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 6, 18, 18, 6, 6, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 16, 13, 16, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 48, 62, 42, 99, 143, 197, 114, 144, 127, 129, 209, 111, 152, 106, 58, 200, 79, 134, 169, 105, 131, 125, 192, 245, 129, 104, 155, 100, 241, 142, 180, 215, 102, 78, 130, 109, 157, 159, 146, 107, 221, 124, 161, 167, 228, 157, 244, 182, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=288 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=557 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=854 kg
+% time elapsed: 58s 461msec
+----------
+%% #Bound  58.89s best:566921 next:[99530,566920] max_lp
+%% #Bound  63.87s best:566921 next:[100086,566920] max_lp
+%% #Bound  66.10s best:566921 next:[100383,566920] max_lp
+%% #16     66.45s best:565449 next:[100383,565448] graph_dec_lns (d=7.58e-01 s=222 t=0.10 p=0.62 stall=2 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=565449
+%%%mzn-stat: objectiveBound=100383
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=66.4491
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 565449 m
+
+successor = [64, 68, 4, 2, 51, 9, 46, 63, 10, 50, 32, 15, 31, 11, 33, 20, 16, 43, 30, 45, 18, 24, 48, 21, 67, 53, 29, 23, 34, 27, 59, 39, 47, 26, 37, 38, 40, 7, 25, 60, 57, 44, 62, 41, 1, 8, 49, 52, 56, 66, 42, 54, 61, 58, 13, 55, 65, 35, 22, 19, 14, 5, 12, 6, 17, 28, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 14, 18, 18, 14, 14, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 16, 13, 14, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 48, 62, 42, 99, 143, 197, 114, 144, 127, 129, 209, 111, 152, 106, 58, 197, 83, 134, 166, 105, 131, 131, 192, 245, 129, 104, 155, 100, 241, 142, 180, 215, 102, 78, 130, 109, 157, 159, 146, 107, 218, 124, 161, 167, 228, 157, 244, 182, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=415 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=430 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=854 kg
+% time elapsed: 1m 7s
+----------
+%% #17     68.21s best:562721 next:[100383,562720] rnd_var_lns (d=8.06e-01 s=231 t=0.10 p=0.62 stall=4 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=562721
+%%%mzn-stat: objectiveBound=100383
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=68.2113
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 562721 m
+
+successor = [63, 68, 4, 2, 51, 9, 46, 60, 10, 50, 32, 15, 31, 11, 33, 20, 16, 43, 48, 45, 18, 24, 52, 21, 1, 64, 29, 23, 34, 27, 59, 39, 47, 26, 37, 38, 40, 7, 25, 53, 44, 41, 62, 58, 61, 8, 49, 30, 56, 66, 42, 54, 57, 55, 13, 67, 65, 35, 22, 19, 14, 5, 12, 6, 17, 28, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 14, 18, 18, 14, 14, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 16, 9, 11, 10, 10, 16, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 10, 13, 14, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 48, 62, 42, 99, 143, 197, 114, 144, 127, 129, 209, 111, 152, 106, 58, 197, 83, 134, 166, 105, 131, 131, 192, 245, 156, 104, 182, 127, 241, 142, 180, 215, 102, 78, 130, 109, 157, 159, 146, 107, 218, 162, 161, 167, 228, 105, 244, 182, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=415 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=221 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=854 kg
+% time elapsed: 1m 8s
+----------
+%% #Bound  70.18s best:562721 next:[106048,562720] max_lp
+%% #18     70.55s best:556835 next:[106048,556834] rins_pump_lns (d=5.93e-01 s=238 t=0.10 p=0.50 stall=2 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=556835
+%%%mzn-stat: objectiveBound=106048
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=70.5518
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 556835 m
+
+successor = [63, 61, 4, 2, 51, 9, 46, 6, 10, 68, 32, 15, 31, 11, 33, 20, 16, 43, 48, 45, 18, 24, 62, 21, 56, 53, 29, 23, 34, 27, 54, 39, 47, 26, 37, 38, 40, 7, 25, 55, 44, 41, 1, 60, 67, 50, 49, 30, 65, 52, 42, 58, 57, 28, 13, 66, 64, 35, 22, 19, 14, 5, 12, 59, 17, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 16, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 10, 13, 18, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 48, 62, 42, 93, 143, 76, 114, 144, 127, 129, 209, 111, 170, 106, 58, 187, 79, 134, 156, 105, 131, 134, 192, 248, 152, 104, 178, 123, 241, 142, 198, 218, 102, 78, 130, 109, 157, 159, 146, 107, 208, 162, 161, 167, 228, 101, 244, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=496 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 11s
+----------
+%% #19     71.58s best:555900 next:[106048,555899] routing_path_lns (d=8.55e-02 s=244 t=0.10 p=0.00 stall=4 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=555900
+%%%mzn-stat: objectiveBound=106048
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=71.575
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 555900 m
+
+successor = [63, 61, 4, 2, 51, 9, 46, 6, 10, 68, 14, 15, 31, 32, 33, 20, 16, 43, 48, 45, 18, 24, 62, 21, 56, 53, 29, 23, 34, 27, 54, 39, 47, 26, 37, 38, 40, 7, 25, 55, 44, 41, 1, 60, 67, 50, 49, 30, 65, 52, 42, 58, 57, 28, 13, 66, 64, 35, 22, 19, 11, 5, 12, 59, 17, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 16, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 10, 13, 18, 12, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 143, 76, 114, 144, 96, 129, 209, 111, 171, 152, 58, 185, 79, 180, 154, 105, 131, 125, 179, 248, 152, 104, 178, 123, 241, 129, 199, 218, 102, 78, 130, 109, 144, 159, 124, 107, 206, 140, 207, 167, 224, 101, 240, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=588 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=623 kg
+V16 (type=3, cap=5000) : charge=496 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 12s
+----------
+%% #Bound  76.05s best:555900 next:[106579,555899] max_lp
+%% #20     77.83s best:555145 next:[106579,555144] routing_path_lns (d=1.20e-01 s=265 t=0.10 p=0.20 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=555145
+%%%mzn-stat: objectiveBound=106579
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=77.8282
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 555145 m
+
+successor = [63, 61, 4, 2, 42, 9, 46, 6, 10, 68, 14, 15, 31, 32, 33, 20, 16, 43, 48, 45, 18, 24, 28, 21, 56, 53, 29, 62, 34, 27, 54, 39, 47, 26, 37, 38, 40, 7, 25, 55, 44, 41, 1, 60, 67, 50, 49, 30, 65, 52, 17, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 12, 59, 51, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 16, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 10, 13, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 110, 93, 143, 76, 114, 144, 96, 129, 209, 111, 152, 152, 132, 184, 79, 180, 153, 105, 66, 125, 179, 248, 152, 104, 178, 123, 241, 129, 180, 218, 102, 78, 130, 109, 144, 159, 174, 157, 205, 190, 207, 167, 205, 101, 221, 190, 97, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=514 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=697 kg
+V16 (type=3, cap=5000) : charge=496 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 18s
+----------
+%% #Bound  79.51s best:555145 next:[106944,555144] max_lp
+%% #21     84.68s best:554788 next:[106944,554787] routing_path_lns (d=8.74e-02 s=308 t=0.10 p=0.17 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=554788
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=84.6776
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 554788 m
+
+successor = [63, 68, 4, 2, 42, 9, 46, 6, 10, 67, 14, 15, 31, 32, 33, 17, 20, 43, 48, 45, 18, 24, 28, 21, 62, 61, 29, 56, 34, 27, 54, 39, 47, 26, 37, 38, 40, 7, 25, 60, 44, 41, 55, 53, 52, 50, 49, 30, 65, 1, 16, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 12, 59, 51, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 16, 11, 13, 5, 11, 13, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 13, 10, 8, 18, 8, 18, 11, 8, 12, 12, 9, 12, 15, 18, 13, 10, 13, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 143, 76, 114, 144, 96, 129, 209, 111, 164, 136, 161, 185, 79, 180, 154, 105, 66, 125, 179, 248, 152, 104, 178, 123, 241, 129, 193, 218, 102, 78, 130, 109, 144, 159, 111, 94, 206, 127, 207, 167, 218, 101, 234, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=686 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=514 kg
+V13 (type=2, cap=1200) : charge=939 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=697 kg
+V16 (type=3, cap=5000) : charge=496 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 25s
+----------
+%% #22     88.53s best:547034 next:[106944,547033] routing_random_lns (d=1.97e-01 s=313 t=0.10 p=0.33 stall=6 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=547034
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=88.5282
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 547034 m
+
+successor = [63, 68, 4, 2, 43, 9, 46, 6, 33, 67, 14, 55, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 28, 21, 62, 61, 29, 56, 34, 27, 54, 39, 47, 26, 37, 38, 40, 7, 25, 60, 44, 41, 42, 10, 52, 50, 49, 30, 65, 1, 16, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 53, 59, 51, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 12, 11, 9, 5, 11, 9, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 16, 10, 8, 18, 8, 18, 11, 8, 12, 12, 12, 12, 15, 18, 16, 10, 16, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 147, 76, 156, 215, 96, 243, 209, 111, 223, 112, 161, 187, 86, 180, 146, 105, 66, 124, 179, 239, 159, 104, 185, 130, 241, 129, 203, 209, 102, 78, 130, 109, 144, 159, 141, 124, 93, 157, 207, 171, 228, 108, 244, 194, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=863 kg
+V13 (type=2, cap=1200) : charge=0 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=697 kg
+V16 (type=3, cap=5000) : charge=861 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 29s
+----------
+%% #23     90.32s best:546454 next:[106944,546453] rnd_var_lns (d=8.08e-01 s=330 t=0.10 p=0.60 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=546454
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=90.3201
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 546454 m
+
+successor = [65, 60, 4, 2, 43, 9, 46, 6, 33, 67, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 28, 21, 63, 55, 29, 68, 34, 27, 56, 39, 47, 26, 37, 38, 40, 7, 25, 61, 44, 41, 42, 49, 52, 50, 54, 30, 10, 1, 16, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 53, 59, 51, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 12, 11, 9, 5, 11, 9, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 16, 10, 8, 18, 8, 18, 11, 8, 12, 12, 12, 12, 15, 18, 16, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 143, 76, 154, 226, 96, 244, 209, 111, 224, 112, 161, 177, 79, 180, 146, 105, 67, 124, 179, 248, 152, 104, 178, 123, 241, 129, 201, 218, 102, 78, 130, 109, 144, 159, 141, 124, 93, 157, 207, 167, 228, 101, 201, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=0 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=697 kg
+V16 (type=3, cap=5000) : charge=791 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 30s
+----------
+%% #24     90.88s best:544383 next:[106944,544382] rnd_cst_lns (d=6.90e-01 s=335 t=0.10 p=0.55 stall=6 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=544383
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=90.8763
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 544383 m
+
+successor = [65, 60, 4, 2, 44, 9, 46, 6, 33, 67, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 28, 21, 63, 55, 29, 68, 34, 27, 56, 39, 47, 26, 37, 38, 40, 7, 25, 61, 49, 41, 42, 43, 52, 50, 54, 30, 10, 1, 16, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 53, 59, 51, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 12, 11, 9, 5, 11, 9, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 16, 10, 8, 18, 8, 18, 11, 8, 12, 12, 12, 12, 15, 18, 16, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 143, 76, 154, 226, 96, 244, 209, 111, 224, 112, 161, 188, 79, 180, 157, 105, 66, 124, 179, 248, 152, 104, 178, 123, 241, 129, 201, 218, 102, 78, 130, 109, 144, 159, 161, 144, 113, 87, 207, 167, 226, 101, 196, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=0 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=697 kg
+V16 (type=3, cap=5000) : charge=791 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 31s
+----------
+%% #25     91.64s best:543831 next:[106944,543830] rnd_cst_lns (d=6.90e-01 s=334 t=0.10 p=0.55 stall=6 h=base) [combined with: rnd_cst_lns (d=6.90e...] (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=543831
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=91.643
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 543831 m
+
+successor = [65, 60, 51, 2, 44, 9, 46, 6, 33, 67, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 28, 21, 63, 55, 29, 68, 34, 27, 56, 39, 47, 26, 37, 38, 40, 7, 25, 61, 49, 41, 42, 43, 52, 50, 54, 30, 10, 1, 16, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 53, 59, 3, 8, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 16, 18, 16, 16, 12, 11, 9, 5, 11, 9, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 16, 10, 8, 18, 8, 18, 11, 8, 12, 12, 12, 12, 15, 18, 16, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 102, 143, 76, 154, 226, 96, 244, 209, 111, 224, 112, 161, 188, 79, 180, 157, 105, 66, 124, 179, 248, 152, 104, 178, 123, 241, 129, 201, 218, 102, 78, 130, 109, 144, 159, 161, 144, 113, 87, 207, 167, 226, 101, 196, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=0 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=791 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 32s
+----------
+%% #26     92.27s best:543531 next:[106944,543530] routing_path_lns (d=1.18e-01 s=337 t=0.10 p=0.29 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=543531
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=92.2658
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 543531 m
+
+successor = [65, 60, 4, 2, 44, 9, 46, 6, 33, 67, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 28, 21, 63, 55, 29, 68, 34, 27, 56, 39, 47, 26, 40, 38, 61, 7, 25, 37, 49, 41, 42, 43, 52, 50, 54, 30, 10, 1, 16, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 53, 59, 51, 8, 3, 36]
+vehicle   = [1, 17, 17, 17, 12, 16, 18, 16, 16, 12, 11, 9, 5, 11, 9, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 16, 10, 8, 18, 8, 18, 11, 8, 12, 12, 12, 12, 15, 18, 16, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 143, 76, 154, 221, 117, 234, 209, 132, 214, 112, 161, 178, 80, 180, 147, 105, 66, 125, 200, 233, 153, 104, 179, 124, 241, 150, 201, 203, 138, 78, 199, 109, 165, 168, 161, 144, 113, 87, 207, 167, 226, 102, 196, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=0 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=697 kg
+V16 (type=3, cap=5000) : charge=791 kg
+V17 (type=3, cap=5000) : charge=433 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 32s
+----------
+%% #27     92.27s best:542979 next:[106944,542978] routing_path_lns (d=1.18e-01 s=337 t=0.10 p=0.29 stall=0 h=routing) [combined with: rnd_cst_lns (d=6.90e...] (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=542979
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=92.2747
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 542979 m
+
+successor = [65, 60, 51, 2, 44, 9, 46, 6, 33, 67, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 28, 21, 63, 55, 29, 68, 34, 27, 56, 39, 47, 26, 40, 38, 61, 7, 25, 37, 49, 41, 42, 43, 52, 50, 54, 30, 10, 1, 16, 58, 57, 23, 13, 66, 64, 35, 22, 19, 11, 5, 53, 59, 3, 8, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 16, 18, 16, 16, 12, 11, 9, 5, 11, 9, 15, 15, 9, 10, 15, 9, 9, 4, 9, 11, 10, 10, 4, 10, 10, 5, 11, 16, 10, 8, 18, 8, 18, 11, 8, 12, 12, 12, 12, 15, 18, 16, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 102, 143, 76, 154, 221, 117, 234, 209, 132, 214, 112, 161, 178, 80, 180, 147, 105, 66, 125, 200, 233, 153, 104, 179, 124, 241, 150, 201, 203, 138, 78, 199, 109, 165, 168, 161, 144, 113, 87, 207, 167, 226, 102, 196, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=221 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=600 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=0 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=791 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 32s
+----------
+%% #28    100.36s best:542486 next:[106944,542485] rnd_var_lns (d=8.51e-01 s=359 t=0.10 p=0.64 stall=0 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=542486
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=100.357
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 542486 m
+
+successor = [65, 68, 51, 2, 44, 9, 46, 6, 33, 67, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 28, 21, 60, 55, 29, 25, 34, 27, 56, 39, 47, 26, 40, 38, 61, 7, 52, 37, 49, 41, 42, 43, 63, 50, 54, 30, 10, 1, 16, 58, 57, 53, 13, 66, 64, 35, 22, 19, 23, 5, 11, 59, 3, 8, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 16, 18, 16, 16, 12, 13, 9, 5, 13, 9, 15, 15, 9, 10, 15, 9, 9, 11, 9, 11, 10, 10, 11, 10, 10, 5, 13, 16, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 15, 18, 16, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 143, 76, 154, 221, 117, 234, 209, 132, 214, 112, 161, 178, 79, 180, 147, 105, 66, 125, 200, 233, 152, 162, 178, 123, 241, 150, 201, 203, 102, 78, 199, 109, 165, 168, 161, 144, 113, 87, 207, 167, 226, 101, 196, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=328 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=493 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=791 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 40s
+----------
+%% #29    104.42s best:534593 next:[106944,534592] routing_random_lns (d=1.45e-01 s=371 t=0.10 p=0.29 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=534593
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=104.424
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 534593 m
+
+successor = [65, 68, 51, 2, 44, 9, 46, 6, 33, 52, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 16, 21, 60, 55, 29, 25, 34, 27, 56, 39, 47, 26, 40, 38, 61, 7, 28, 37, 49, 41, 42, 43, 67, 50, 54, 30, 10, 1, 63, 58, 57, 53, 13, 66, 64, 35, 22, 19, 23, 5, 11, 59, 3, 8, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 16, 18, 16, 16, 12, 13, 9, 5, 13, 9, 11, 11, 9, 10, 11, 9, 9, 11, 9, 13, 10, 10, 13, 10, 10, 5, 13, 16, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 11, 18, 16, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 93, 143, 76, 154, 221, 92, 234, 209, 111, 214, 136, 161, 178, 79, 180, 147, 105, 94, 125, 197, 241, 159, 171, 185, 130, 241, 129, 201, 211, 102, 78, 163, 109, 144, 132, 161, 144, 113, 87, 207, 167, 226, 108, 196, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=695 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=273 kg
+V16 (type=3, cap=5000) : charge=791 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 45s
+----------
+%% #30    113.20s best:514101 next:[106944,514100] routing_random_lns (d=1.94e-01 s=393 t=0.10 p=0.38 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=514101
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=113.203
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 514101 m
+
+successor = [68, 1, 51, 2, 44, 9, 46, 6, 33, 52, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 16, 21, 60, 55, 29, 25, 34, 27, 56, 39, 47, 26, 40, 38, 61, 7, 28, 37, 49, 41, 42, 43, 67, 50, 54, 30, 10, 63, 8, 58, 57, 53, 13, 66, 64, 35, 22, 19, 23, 5, 11, 59, 3, 65, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 15, 18, 15, 15, 12, 13, 9, 5, 13, 9, 11, 11, 9, 10, 11, 9, 9, 11, 9, 13, 10, 10, 13, 10, 10, 5, 13, 15, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 11, 18, 15, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 160, 143, 145, 175, 227, 92, 248, 209, 111, 227, 108, 160, 189, 79, 179, 158, 105, 66, 136, 197, 239, 152, 171, 185, 123, 241, 129, 222, 209, 102, 78, 163, 109, 144, 132, 167, 150, 113, 87, 206, 167, 245, 101, 202, 190, 79, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=695 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=1064 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 53s
+----------
+%% #31    115.31s best:513550 next:[106944,513549] routing_path_lns (d=1.20e-01 s=407 t=0.10 p=0.33 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=513550
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=115.306
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 513550 m
+
+successor = [68, 1, 51, 2, 44, 9, 46, 6, 33, 52, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 16, 21, 60, 55, 29, 25, 34, 27, 56, 39, 47, 26, 40, 38, 61, 7, 28, 37, 42, 49, 41, 43, 67, 50, 54, 30, 10, 63, 8, 58, 57, 53, 13, 66, 64, 35, 22, 19, 23, 5, 11, 59, 3, 65, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 15, 18, 15, 15, 12, 13, 9, 5, 13, 9, 11, 11, 9, 10, 11, 9, 9, 11, 9, 13, 10, 10, 13, 10, 10, 5, 13, 15, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 11, 18, 15, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 160, 143, 145, 175, 219, 98, 234, 209, 113, 214, 108, 161, 178, 79, 180, 147, 105, 66, 125, 199, 248, 152, 173, 178, 123, 241, 131, 222, 218, 102, 78, 163, 109, 146, 132, 140, 157, 113, 87, 207, 167, 245, 101, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=695 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=1064 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 55s
+----------
+%% #32    116.49s best:512026 next:[106944,512025] routing_path_lns (d=1.56e-01 s=417 t=0.10 p=0.40 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=512026
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=116.492
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 512026 m
+
+successor = [68, 1, 51, 2, 44, 47, 46, 9, 6, 52, 14, 62, 31, 32, 12, 17, 20, 15, 48, 45, 18, 24, 16, 21, 60, 55, 29, 25, 34, 27, 56, 39, 53, 26, 40, 38, 61, 7, 28, 37, 42, 49, 41, 43, 67, 50, 33, 30, 10, 63, 8, 58, 54, 57, 13, 66, 64, 35, 22, 19, 23, 5, 11, 59, 3, 65, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 15, 18, 15, 15, 12, 13, 9, 5, 13, 9, 11, 11, 9, 10, 11, 9, 9, 11, 9, 13, 10, 10, 13, 10, 10, 5, 13, 15, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 11, 18, 15, 10, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 185, 143, 144, 159, 219, 100, 234, 209, 115, 214, 108, 161, 178, 79, 180, 147, 106, 66, 125, 201, 248, 152, 175, 178, 123, 241, 133, 256, 218, 102, 78, 163, 109, 148, 132, 140, 157, 113, 87, 207, 167, 239, 101, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=1061 kg
+V11 (type=2, cap=1200) : charge=695 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=1064 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 1m 57s
+----------
+%% #33    129.81s best:508980 next:[106944,508979] rnd_var_lns (d=8.47e-01 s=467 t=0.10 p=0.60 stall=2 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=508980
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=129.808
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 508980 m
+
+successor = [68, 58, 51, 2, 44, 47, 46, 9, 6, 67, 14, 62, 31, 32, 12, 17, 20, 15, 30, 45, 18, 24, 16, 21, 60, 65, 29, 25, 34, 27, 63, 39, 53, 26, 40, 38, 61, 7, 28, 37, 42, 49, 41, 43, 1, 50, 33, 8, 10, 52, 48, 56, 54, 57, 13, 66, 64, 35, 22, 19, 23, 5, 11, 59, 3, 55, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 15, 18, 15, 15, 12, 13, 9, 5, 13, 9, 11, 11, 9, 10, 11, 9, 9, 11, 9, 13, 10, 10, 13, 10, 10, 5, 13, 15, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 11, 18, 15, 15, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 204, 143, 163, 178, 222, 101, 243, 209, 116, 223, 108, 161, 183, 79, 180, 152, 105, 66, 130, 202, 248, 152, 176, 178, 123, 241, 134, 254, 218, 102, 78, 163, 109, 149, 132, 140, 160, 113, 87, 207, 167, 237, 123, 197, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=852 kg
+V11 (type=2, cap=1200) : charge=695 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=1273 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 2m 10s
+----------
+%% #34    135.31s best:506002 next:[106944,506001] graph_var_lns (d=6.07e-01 s=495 t=0.10 p=0.50 stall=1 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=506002
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=135.305
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 506002 m
+
+successor = [68, 58, 51, 2, 44, 47, 46, 9, 6, 67, 14, 62, 31, 32, 12, 17, 20, 15, 30, 45, 18, 24, 19, 21, 60, 65, 29, 25, 34, 27, 63, 39, 53, 26, 40, 38, 61, 7, 28, 37, 42, 49, 41, 43, 1, 50, 33, 8, 10, 52, 48, 56, 54, 57, 13, 66, 64, 35, 22, 23, 16, 5, 11, 59, 3, 55, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 15, 18, 15, 15, 12, 13, 9, 5, 13, 9, 11, 11, 9, 10, 11, 9, 9, 10, 9, 13, 10, 10, 13, 10, 10, 5, 13, 15, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 11, 18, 15, 15, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 204, 143, 163, 178, 219, 76, 243, 209, 111, 223, 106, 161, 185, 95, 180, 154, 105, 66, 130, 197, 241, 141, 171, 167, 112, 241, 129, 254, 211, 102, 78, 163, 109, 144, 132, 140, 157, 113, 87, 207, 167, 237, 123, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=924 kg
+V11 (type=2, cap=1200) : charge=623 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=1273 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 2m 15s
+----------
+%% #35    136.66s best:503360 next:[106944,503359] routing_random_lns (d=2.53e-01 s=500 t=0.10 p=0.45 stall=2 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=503360
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=136.664
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 503360 m
+
+successor = [68, 58, 51, 2, 44, 47, 46, 9, 6, 67, 14, 62, 31, 32, 12, 17, 20, 15, 30, 45, 28, 24, 19, 21, 60, 1, 29, 25, 34, 27, 63, 39, 61, 26, 40, 38, 65, 7, 18, 37, 42, 49, 41, 43, 53, 50, 33, 8, 10, 52, 48, 56, 54, 57, 13, 66, 64, 35, 22, 23, 16, 5, 11, 59, 3, 55, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 15, 18, 15, 15, 12, 13, 13, 5, 13, 13, 11, 11, 13, 10, 11, 9, 9, 10, 9, 9, 10, 10, 9, 10, 10, 5, 13, 15, 10, 8, 18, 8, 18, 13, 8, 12, 12, 12, 12, 11, 18, 15, 15, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 209, 143, 163, 178, 219, 96, 239, 209, 111, 219, 106, 154, 183, 95, 180, 146, 105, 66, 124, 193, 237, 157, 167, 183, 128, 241, 129, 255, 207, 102, 78, 163, 109, 153, 132, 140, 157, 113, 87, 207, 167, 238, 123, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=596 kg
+V10 (type=2, cap=1200) : charge=924 kg
+V11 (type=2, cap=1200) : charge=623 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=1064 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=1273 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 2m 17s
+----------
+%% #36    137.20s best:503074 next:[106944,503073] routing_random_lns (d=2.53e-01 s=499 t=0.10 p=0.45 stall=2 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=503074
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=137.203
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 503074 m
+
+successor = [64, 58, 51, 2, 44, 47, 46, 9, 6, 67, 14, 62, 31, 32, 12, 17, 20, 15, 30, 45, 18, 24, 19, 21, 60, 65, 29, 25, 34, 27, 63, 39, 53, 26, 40, 38, 61, 7, 28, 37, 42, 49, 41, 43, 1, 50, 33, 8, 10, 52, 16, 35, 54, 57, 13, 66, 56, 68, 22, 23, 48, 5, 11, 59, 3, 55, 4, 36]
+vehicle   = [1, 17, 15, 17, 12, 11, 18, 11, 11, 12, 13, 9, 5, 13, 9, 15, 15, 9, 10, 15, 9, 9, 10, 9, 13, 10, 10, 13, 10, 10, 5, 13, 11, 10, 2, 18, 2, 18, 13, 2, 12, 12, 12, 12, 15, 18, 11, 11, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 90, 34, 62, 42, 157, 143, 116, 131, 227, 92, 248, 209, 111, 227, 136, 161, 177, 95, 180, 146, 105, 66, 124, 197, 221, 141, 171, 167, 112, 241, 129, 246, 191, 102, 78, 199, 109, 144, 168, 148, 165, 121, 95, 207, 167, 229, 76, 202, 190, 102, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=924 kg
+V11 (type=2, cap=1200) : charge=1000 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=0 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 2m 17s
+----------
+%% #37    145.11s best:501067 next:[106944,501066] rins_pump_lns (d=4.62e-01 s=540 t=0.10 p=0.47 stall=10 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=501067
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=145.113
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 501067 m
+
+successor = [64, 4, 51, 61, 44, 47, 46, 9, 6, 58, 14, 52, 31, 32, 12, 17, 20, 15, 30, 45, 18, 24, 19, 21, 66, 65, 29, 25, 34, 27, 63, 39, 48, 26, 40, 38, 1, 7, 28, 37, 42, 49, 41, 43, 53, 50, 33, 67, 10, 59, 16, 35, 54, 57, 13, 55, 56, 68, 22, 23, 62, 5, 11, 60, 3, 8, 2, 36]
+vehicle   = [1, 17, 15, 17, 12, 16, 18, 16, 16, 12, 13, 9, 5, 13, 9, 15, 15, 9, 10, 15, 9, 9, 10, 9, 13, 10, 10, 13, 10, 10, 5, 13, 16, 10, 2, 18, 2, 18, 13, 2, 12, 12, 12, 12, 15, 18, 16, 16, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 143, 76, 114, 219, 69, 248, 209, 111, 227, 112, 159, 177, 95, 178, 146, 105, 66, 124, 197, 248, 141, 171, 167, 112, 241, 129, 190, 218, 102, 78, 163, 109, 144, 132, 140, 157, 113, 87, 205, 167, 171, 219, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=924 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=1000 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 2m 25s
+----------
+%% #38    160.15s best:500358 next:[106944,500357] rnd_cst_lns (d=6.97e-01 s=595 t=0.10 p=0.53 stall=4 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=500358
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=160.146
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 500358 m
+
+successor = [64, 4, 51, 61, 44, 47, 46, 9, 6, 63, 14, 52, 31, 32, 12, 17, 20, 15, 30, 45, 18, 24, 19, 21, 66, 67, 29, 25, 34, 27, 65, 39, 48, 55, 40, 38, 1, 7, 28, 37, 42, 49, 41, 43, 53, 50, 33, 26, 10, 59, 16, 35, 54, 57, 13, 62, 56, 68, 22, 23, 58, 5, 11, 60, 3, 8, 2, 36]
+vehicle   = [1, 17, 15, 17, 12, 16, 18, 16, 16, 12, 13, 9, 5, 13, 9, 15, 15, 9, 10, 15, 9, 9, 10, 9, 13, 16, 10, 13, 10, 10, 5, 13, 16, 10, 2, 18, 2, 18, 13, 2, 12, 12, 12, 12, 15, 18, 16, 16, 12, 18, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 44, 34, 62, 42, 140, 143, 76, 114, 219, 96, 248, 209, 111, 227, 112, 159, 177, 95, 178, 146, 105, 66, 124, 197, 245, 141, 171, 167, 112, 241, 129, 190, 215, 102, 78, 163, 109, 144, 132, 140, 157, 113, 87, 205, 167, 171, 219, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=747 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=749 kg
+V14 (type=3, cap=5000) : charge=0 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=773 kg
+% time elapsed: 2m 40s
+----------
+%% #39    174.79s best:498321 next:[106944,498320] routing_path_lns (d=1.21e-01 s=654 t=0.10 p=0.41 stall=6 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=498321
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=174.791
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 498321 m
+
+successor = [66, 4, 51, 61, 44, 47, 46, 9, 6, 67, 14, 65, 31, 32, 12, 17, 20, 15, 11, 45, 18, 24, 25, 21, 30, 63, 29, 60, 34, 27, 59, 39, 48, 52, 40, 38, 55, 7, 28, 37, 42, 49, 41, 43, 53, 50, 33, 26, 10, 1, 16, 35, 54, 57, 13, 62, 56, 68, 22, 23, 58, 5, 19, 36, 3, 8, 2, 64]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 12, 13, 9, 5, 13, 9, 15, 15, 9, 13, 15, 9, 9, 10, 9, 10, 16, 10, 13, 10, 10, 5, 13, 16, 10, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 12, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 143, 76, 114, 219, 107, 234, 209, 122, 214, 112, 161, 178, 79, 180, 147, 105, 66, 125, 89, 241, 150, 182, 176, 121, 241, 140, 192, 200, 102, 78, 163, 109, 155, 132, 140, 157, 113, 87, 207, 167, 173, 221, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=911 kg
+V10 (type=2, cap=1200) : charge=731 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=765 kg
+V14 (type=3, cap=5000) : charge=773 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 2m 55s
+----------
+%% #40    175.82s best:496195 next:[106944,496194] routing_path_lns (d=1.21e-01 s=658 t=0.10 p=0.41 stall=6 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=496195
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=175.819
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 496195 m
+
+successor = [66, 4, 51, 61, 44, 47, 46, 9, 6, 67, 14, 65, 31, 32, 12, 17, 20, 59, 22, 45, 24, 30, 25, 28, 21, 63, 29, 15, 34, 27, 60, 39, 48, 52, 40, 38, 55, 7, 18, 37, 42, 49, 41, 43, 53, 50, 33, 26, 10, 1, 16, 35, 54, 57, 13, 62, 56, 68, 19, 23, 58, 5, 11, 36, 3, 8, 2, 64]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 12, 13, 10, 5, 13, 10, 15, 15, 13, 9, 15, 10, 9, 10, 10, 10, 16, 9, 10, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 12, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 143, 76, 114, 219, 92, 233, 209, 111, 213, 112, 161, 174, 92, 180, 125, 111, 66, 144, 96, 241, 159, 171, 185, 130, 241, 129, 192, 209, 102, 78, 163, 109, 144, 132, 140, 157, 113, 87, 207, 167, 173, 221, 194, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=951 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=933 kg
+V13 (type=2, cap=1200) : charge=612 kg
+V14 (type=3, cap=5000) : charge=773 kg
+V15 (type=3, cap=5000) : charge=896 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 2m 56s
+----------
+%% #41    183.33s best:494181 next:[106944,494180] routing_random_lns (d=2.60e-01 s=686 t=0.10 p=0.47 stall=2 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=494181
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=183.326
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 494181 m
+
+successor = [66, 4, 51, 68, 44, 47, 46, 9, 6, 67, 14, 61, 31, 32, 12, 17, 20, 59, 22, 45, 24, 30, 25, 49, 21, 63, 29, 15, 34, 27, 60, 28, 48, 52, 40, 38, 55, 7, 11, 37, 42, 65, 41, 43, 18, 50, 33, 26, 10, 1, 16, 35, 54, 57, 13, 62, 56, 53, 19, 23, 58, 5, 39, 36, 3, 8, 2, 64]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 10, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 10, 10, 16, 9, 13, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 10, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 147, 76, 114, 191, 114, 234, 209, 129, 214, 112, 137, 211, 79, 156, 116, 105, 66, 135, 89, 242, 153, 175, 179, 124, 241, 147, 190, 203, 138, 78, 199, 113, 95, 168, 174, 191, 147, 87, 183, 171, 171, 222, 166, 194, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=542 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=773 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 3s
+----------
+%% #42    186.84s best:492743 next:[106944,492742] rnd_var_lns (d=8.12e-01 s=704 t=0.10 p=0.55 stall=5 h=base) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=492743
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=186.841
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 492743 m
+
+successor = [61, 4, 51, 68, 44, 47, 46, 9, 6, 67, 28, 55, 31, 11, 12, 17, 20, 59, 22, 45, 24, 30, 25, 49, 21, 63, 29, 15, 34, 27, 65, 14, 48, 52, 40, 38, 60, 7, 32, 37, 42, 66, 41, 43, 18, 50, 33, 26, 10, 1, 16, 35, 54, 57, 13, 62, 56, 53, 19, 23, 58, 5, 39, 36, 3, 8, 2, 64]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 10, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 10, 10, 16, 9, 13, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 10, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 147, 76, 114, 191, 147, 231, 209, 129, 211, 112, 137, 211, 79, 156, 116, 105, 66, 135, 89, 242, 153, 172, 179, 124, 241, 110, 190, 203, 138, 78, 199, 109, 95, 168, 174, 191, 147, 87, 183, 171, 171, 222, 166, 194, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=542 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=773 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 7s
+----------
+%% #43    196.76s best:492687 next:[106944,492686] routing_path_lns (d=8.06e-02 s=739 t=0.10 p=0.37 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=492687
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=196.761
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 492687 m
+
+successor = [66, 4, 51, 68, 44, 47, 46, 9, 6, 67, 29, 61, 31, 11, 12, 17, 20, 59, 22, 45, 24, 30, 25, 49, 21, 63, 28, 34, 15, 27, 65, 14, 48, 60, 40, 38, 55, 7, 32, 37, 42, 52, 41, 43, 18, 50, 33, 26, 10, 1, 16, 35, 54, 57, 13, 62, 56, 53, 19, 23, 58, 5, 39, 36, 3, 8, 2, 64]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 10, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 10, 10, 16, 9, 9, 13, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 10, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 143, 76, 114, 196, 144, 248, 209, 128, 227, 112, 138, 212, 79, 157, 121, 105, 66, 140, 94, 241, 153, 179, 185, 124, 241, 109, 192, 204, 102, 78, 163, 109, 94, 132, 140, 157, 113, 87, 184, 167, 173, 221, 171, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=782 kg
+V10 (type=2, cap=1200) : charge=542 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1156 kg
+V14 (type=3, cap=5000) : charge=773 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 17s
+----------
+%% #44    197.21s best:488631 next:[106944,488630] routing_path_lns (d=8.06e-02 s=740 t=0.10 p=0.37 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=488631
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=197.21
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 488631 m
+
+successor = [66, 4, 51, 68, 44, 47, 46, 9, 6, 67, 28, 61, 31, 11, 12, 20, 16, 17, 22, 59, 24, 30, 25, 49, 21, 63, 29, 15, 34, 27, 65, 14, 48, 60, 40, 38, 55, 7, 32, 37, 42, 52, 41, 43, 18, 50, 33, 26, 10, 1, 45, 35, 54, 57, 13, 62, 56, 53, 19, 23, 58, 5, 39, 36, 3, 8, 2, 64]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 10, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 10, 10, 16, 9, 13, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 10, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 143, 76, 114, 194, 145, 231, 209, 129, 211, 194, 174, 152, 79, 222, 119, 105, 66, 138, 92, 241, 153, 170, 179, 124, 241, 110, 192, 203, 102, 78, 163, 109, 94, 132, 140, 157, 113, 87, 106, 167, 173, 221, 169, 190, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=542 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=773 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 17s
+----------
+%% #45    202.03s best:487455 next:[106944,487454] routing_random_lns (d=2.61e-01 s=755 t=0.10 p=0.47 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=487455
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=202.033
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 487455 m
+
+successor = [66, 4, 51, 64, 44, 47, 46, 9, 6, 67, 28, 14, 31, 61, 12, 20, 16, 17, 22, 59, 24, 30, 25, 49, 21, 63, 29, 15, 34, 27, 65, 11, 48, 68, 40, 38, 55, 7, 32, 37, 42, 52, 41, 43, 18, 50, 33, 26, 10, 1, 45, 35, 54, 57, 13, 62, 56, 53, 19, 23, 58, 5, 39, 36, 3, 8, 2, 60]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 10, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 10, 10, 16, 9, 13, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 10, 14, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 145, 147, 76, 114, 194, 128, 212, 209, 238, 192, 176, 156, 134, 79, 204, 119, 105, 66, 138, 91, 242, 153, 153, 179, 124, 241, 109, 193, 203, 102, 78, 163, 109, 94, 132, 140, 157, 113, 87, 106, 171, 174, 222, 169, 194, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=0 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=542 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=773 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 22s
+----------
+%% #46    227.01s best:486565 next:[106944,486564] routing_random_lns (d=2.60e-01 s=853 t=0.10 p=0.47 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=486565
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=227.005
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 486565 m
+
+successor = [53, 4, 51, 64, 44, 47, 46, 9, 6, 67, 28, 14, 31, 1, 12, 20, 16, 17, 22, 66, 24, 30, 50, 23, 21, 52, 29, 15, 34, 27, 61, 11, 48, 68, 40, 38, 63, 7, 32, 37, 42, 65, 41, 43, 18, 49, 33, 26, 10, 54, 45, 35, 59, 2, 13, 60, 56, 57, 19, 25, 62, 5, 39, 36, 3, 8, 55, 58]
+vehicle   = [1, 4, 15, 4, 12, 16, 14, 16, 16, 14, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 10, 10, 16, 9, 13, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 143, 76, 114, 227, 127, 214, 209, 240, 194, 194, 174, 152, 86, 222, 81, 105, 147, 100, 54, 241, 153, 152, 179, 124, 241, 109, 192, 203, 102, 78, 163, 109, 94, 132, 140, 157, 113, 87, 106, 182, 173, 221, 202, 194, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=234 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=477 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=0 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 47s
+----------
+%% #47    236.21s best:484665 next:[106944,484664] routing_path_lns (d=8.19e-02 s=906 t=0.10 p=0.39 stall=2 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=484665
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=236.208
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 484665 m
+
+successor = [56, 4, 51, 59, 44, 47, 49, 9, 6, 46, 28, 14, 31, 61, 12, 20, 16, 17, 22, 67, 24, 30, 50, 23, 21, 65, 29, 15, 34, 27, 53, 11, 48, 62, 40, 38, 63, 10, 32, 37, 42, 1, 41, 43, 18, 7, 33, 26, 68, 52, 45, 35, 66, 2, 13, 60, 54, 57, 19, 25, 55, 5, 39, 36, 3, 8, 64, 58]
+vehicle   = [1, 4, 15, 4, 12, 16, 14, 16, 16, 14, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 10, 10, 16, 9, 13, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 202, 76, 114, 150, 127, 217, 117, 243, 195, 181, 161, 139, 79, 209, 104, 105, 147, 123, 77, 241, 153, 152, 179, 124, 149, 109, 192, 203, 102, 78, 163, 109, 94, 132, 140, 157, 113, 87, 111, 182, 173, 221, 228, 174, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=234 kg
+V5 (type=1, cap=300) : charge=274 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=477 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=0 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 56s
+----------
+%% #48    236.73s best:484515 next:[106944,484514] routing_path_lns (d=8.19e-02 s=907 t=0.10 p=0.39 stall=2 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=484515
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=236.731
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 484515 m
+
+successor = [66, 4, 51, 68, 44, 47, 46, 9, 6, 65, 28, 14, 31, 1, 12, 20, 16, 17, 22, 67, 50, 30, 55, 13, 21, 64, 29, 15, 34, 27, 52, 11, 48, 54, 40, 38, 53, 7, 32, 37, 42, 59, 41, 43, 18, 49, 33, 26, 10, 23, 45, 35, 63, 2, 24, 60, 56, 57, 19, 25, 62, 5, 39, 36, 3, 8, 61, 58]
+vehicle   = [1, 4, 15, 4, 12, 16, 14, 16, 16, 14, 13, 13, 5, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 5, 10, 16, 9, 13, 9, 9, 5, 13, 16, 9, 2, 14, 2, 14, 13, 2, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 143, 76, 114, 222, 127, 217, 194, 243, 195, 176, 156, 134, 79, 204, 81, 105, 133, 144, 54, 241, 153, 152, 179, 124, 226, 109, 192, 203, 102, 78, 163, 109, 94, 132, 140, 157, 113, 87, 106, 177, 173, 221, 197, 103, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=298 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=234 kg
+V5 (type=1, cap=300) : charge=295 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=0 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=0 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 3m 57s
+----------
+%% #49    285.06s best:483308 next:[106944,483307] routing_random_lns (d=1.78e-01 s=1080 t=0.10 p=0.44 stall=4 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=483308
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=285.061
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 483308 m
+
+successor = [68, 4, 51, 60, 44, 47, 46, 9, 6, 49, 28, 14, 31, 56, 12, 20, 16, 17, 22, 55, 50, 30, 52, 13, 21, 61, 29, 15, 34, 27, 63, 11, 48, 57, 40, 38, 53, 7, 32, 37, 42, 1, 41, 43, 18, 10, 33, 26, 54, 23, 45, 58, 59, 24, 66, 65, 64, 35, 19, 25, 62, 5, 39, 36, 3, 8, 2, 67]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 14, 13, 13, 4, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 4, 10, 16, 9, 13, 9, 9, 4, 13, 16, 9, 8, 14, 8, 14, 13, 8, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 48, 62, 42, 143, 143, 76, 117, 210, 127, 217, 209, 243, 194, 194, 174, 152, 79, 222, 95, 105, 147, 57, 68, 240, 153, 152, 179, 124, 241, 109, 191, 203, 102, 78, 163, 109, 94, 132, 140, 157, 113, 87, 124, 182, 172, 220, 244, 117, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=295 kg
+V5 (type=1, cap=300) : charge=0 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 4m 45s
+----------
+%% #50    298.10s best:482840 next:[106944,482839] routing_random_lns (d=2.53e-01 s=1123 t=0.10 p=0.48 stall=0 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=482840
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=298.102
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 482840 m
+
+successor = [68, 4, 51, 60, 44, 47, 46, 9, 6, 49, 28, 14, 31, 56, 12, 20, 16, 17, 22, 53, 50, 30, 52, 13, 21, 61, 29, 39, 34, 27, 59, 11, 48, 57, 40, 38, 64, 7, 15, 37, 42, 1, 41, 43, 18, 10, 33, 26, 54, 23, 45, 58, 55, 24, 66, 65, 63, 35, 19, 25, 62, 5, 32, 36, 3, 8, 2, 67]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 14, 13, 13, 4, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 4, 10, 16, 9, 13, 9, 9, 4, 13, 16, 9, 8, 14, 8, 14, 13, 8, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 145, 143, 76, 119, 195, 102, 218, 209, 244, 180, 176, 156, 134, 79, 204, 95, 105, 147, 57, 68, 242, 159, 127, 185, 130, 241, 84, 193, 209, 102, 78, 163, 109, 158, 132, 140, 157, 113, 87, 106, 167, 174, 222, 224, 117, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=295 kg
+V5 (type=1, cap=300) : charge=0 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 4m 58s
+----------
+%% #51    316.06s best:482147 next:[106944,482146] routing_path_lns (d=9.99e-02 s=1192 t=0.10 p=0.44 stall=7 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=482147
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=316.058
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 482147 m
+
+successor = [54, 4, 51, 60, 44, 47, 49, 9, 6, 46, 28, 14, 31, 56, 12, 20, 16, 17, 22, 55, 50, 30, 53, 13, 21, 57, 29, 39, 34, 27, 61, 11, 48, 64, 40, 38, 1, 10, 15, 37, 42, 52, 41, 43, 18, 7, 33, 26, 66, 23, 45, 58, 63, 24, 62, 65, 68, 35, 19, 25, 59, 5, 32, 36, 3, 8, 2, 67]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 14, 13, 13, 4, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 4, 10, 16, 9, 13, 9, 9, 4, 13, 16, 9, 8, 14, 8, 14, 13, 8, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 202, 76, 114, 156, 102, 212, 209, 238, 184, 181, 161, 139, 79, 209, 95, 105, 147, 57, 68, 241, 153, 127, 179, 124, 241, 84, 192, 203, 102, 78, 163, 115, 158, 132, 140, 157, 113, 87, 111, 182, 173, 221, 228, 117, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=295 kg
+V5 (type=1, cap=300) : charge=0 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 5m 16s
+----------
+%% #52    340.03s best:481044 next:[106944,481043] routing_path_lns (d=1.17e-01 s=1274 t=0.10 p=0.46 stall=2 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=481044
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=340.027
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 481044 m
+
+successor = [54, 4, 51, 60, 44, 47, 49, 9, 6, 46, 28, 15, 31, 56, 14, 20, 16, 17, 22, 55, 50, 30, 53, 13, 21, 57, 29, 39, 34, 27, 61, 11, 48, 64, 40, 38, 1, 10, 12, 37, 42, 52, 41, 43, 18, 7, 33, 26, 66, 23, 45, 58, 63, 24, 62, 65, 68, 35, 19, 25, 59, 5, 32, 36, 3, 8, 2, 67]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 14, 13, 13, 4, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 4, 10, 16, 9, 13, 9, 9, 4, 13, 16, 9, 8, 14, 8, 14, 13, 8, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 196, 76, 114, 150, 118, 203, 209, 244, 226, 194, 174, 152, 79, 222, 95, 105, 147, 57, 68, 241, 153, 143, 179, 124, 241, 100, 192, 203, 102, 78, 163, 109, 174, 132, 140, 157, 113, 87, 124, 176, 173, 221, 222, 117, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=295 kg
+V5 (type=1, cap=300) : charge=0 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 5m 40s
+----------
+%% #53    351.65s best:479882 next:[106944,479881] routing_path_lns (d=1.59e-01 s=1339 t=0.10 p=0.49 stall=1 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=479882
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=351.651
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 479882 m
+
+successor = [60, 4, 51, 56, 44, 47, 49, 9, 6, 46, 32, 15, 31, 65, 14, 20, 16, 17, 22, 66, 23, 30, 68, 13, 50, 61, 29, 39, 34, 27, 64, 28, 48, 55, 40, 38, 1, 10, 12, 37, 42, 57, 41, 43, 18, 7, 33, 26, 53, 21, 45, 58, 63, 24, 62, 54, 52, 35, 19, 25, 59, 5, 11, 36, 3, 8, 2, 67]
+vehicle   = [1, 17, 15, 17, 12, 16, 14, 16, 16, 14, 13, 13, 4, 13, 13, 15, 15, 15, 9, 15, 10, 9, 10, 4, 10, 16, 9, 13, 9, 9, 4, 13, 16, 9, 8, 14, 8, 14, 13, 8, 12, 12, 12, 12, 15, 14, 16, 16, 14, 10, 15, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 62, 42, 140, 196, 76, 114, 150, 69, 203, 209, 244, 226, 181, 161, 139, 79, 209, 125, 105, 147, 57, 68, 241, 153, 143, 179, 124, 241, 84, 192, 203, 102, 78, 163, 109, 174, 132, 140, 157, 113, 87, 111, 176, 173, 221, 222, 98, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=295 kg
+V5 (type=1, cap=300) : charge=0 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=844 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=741 kg
+V13 (type=2, cap=1200) : charge=1094 kg
+V14 (type=3, cap=5000) : charge=838 kg
+V15 (type=3, cap=5000) : charge=1015 kg
+V16 (type=3, cap=5000) : charge=1177 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 5m 52s
+----------
+%% #54    365.41s best:479467 next:[106944,479466] routing_random_lns (d=2.56e-01 s=1376 t=0.10 p=0.48 stall=5 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=479467
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=365.406
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 479467 m
+
+successor = [60, 4, 51, 65, 44, 47, 49, 9, 6, 46, 32, 15, 31, 57, 14, 20, 16, 17, 22, 66, 23, 30, 68, 13, 50, 61, 29, 48, 42, 27, 58, 12, 39, 55, 40, 38, 1, 10, 11, 37, 28, 56, 41, 43, 18, 7, 34, 26, 53, 21, 45, 64, 63, 24, 62, 54, 52, 35, 19, 25, 59, 5, 33, 3, 36, 8, 2, 67]
+vehicle   = [1, 17, 14, 17, 12, 16, 15, 16, 16, 15, 13, 13, 4, 13, 13, 14, 14, 14, 9, 14, 10, 9, 10, 4, 10, 12, 9, 12, 9, 9, 4, 13, 13, 16, 8, 15, 8, 15, 13, 8, 12, 9, 12, 12, 14, 15, 16, 12, 15, 10, 14, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 53, 62, 56, 140, 202, 76, 114, 156, 143, 186, 117, 244, 226, 194, 161, 139, 79, 222, 111, 105, 133, 57, 54, 221, 153, 182, 179, 124, 149, 158, 100, 192, 102, 84, 163, 115, 124, 132, 154, 213, 127, 101, 111, 182, 169, 201, 228, 84, 83, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=0 kg
+V4 (type=1, cap=300) : charge=295 kg
+V5 (type=1, cap=300) : charge=0 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=974 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=1069 kg
+V13 (type=2, cap=1200) : charge=1168 kg
+V14 (type=3, cap=5000) : charge=1015 kg
+V15 (type=3, cap=5000) : charge=838 kg
+V16 (type=3, cap=5000) : charge=645 kg
+V17 (type=3, cap=5000) : charge=234 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 6m 6s
+----------
+%% #55    375.83s best:479097 next:[106944,479096] routing_path_lns (d=2.13e-01 s=1412 t=0.10 p=0.51 stall=1 h=routing) (fixed_bools=0/12404)
+%%%mzn-stat: boolVariables=12404
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=479097
+%%%mzn-stat: objectiveBound=106944
+%%%mzn-stat: propagations=5251713
+%%%mzn-stat: solveTime=375.825
+%%%mzn-stat-end
+=== SOLUTION VRPTW Casablanca (v3 - time-dependent) ===
+Distance totale : 479097 m
+
+successor = [68, 4, 51, 63, 44, 47, 49, 9, 6, 46, 12, 15, 31, 60, 14, 20, 16, 17, 22, 66, 23, 30, 57, 33, 50, 61, 29, 48, 42, 27, 58, 11, 39, 55, 40, 38, 1, 10, 32, 37, 28, 65, 41, 43, 18, 7, 34, 26, 53, 21, 45, 64, 2, 13, 62, 67, 52, 35, 19, 25, 59, 5, 24, 3, 54, 8, 36, 56]
+vehicle   = [1, 3, 14, 3, 12, 16, 17, 16, 16, 17, 13, 13, 4, 13, 13, 14, 14, 14, 9, 14, 10, 9, 10, 13, 10, 12, 9, 12, 9, 9, 4, 13, 13, 16, 8, 17, 8, 17, 13, 8, 12, 9, 12, 12, 14, 17, 16, 12, 17, 10, 14, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+arrivee   = [0, 14, 34, 139, 42, 157, 202, 76, 114, 156, 160, 183, 209, 244, 226, 181, 161, 139, 79, 209, 125, 105, 147, 57, 54, 242, 153, 168, 179, 124, 241, 142, 93, 209, 102, 84, 163, 115, 117, 132, 140, 213, 113, 87, 111, 182, 186, 222, 228, 98, 78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+--- Charge par véhicule ---
+V1 (type=1, cap=300) : charge=0 kg
+V2 (type=1, cap=300) : charge=0 kg
+V3 (type=1, cap=300) : charge=234 kg
+V4 (type=1, cap=300) : charge=274 kg
+V5 (type=1, cap=300) : charge=0 kg
+V6 (type=1, cap=300) : charge=0 kg
+V7 (type=1, cap=300) : charge=0 kg
+V8 (type=1, cap=300) : charge=298 kg
+V9 (type=2, cap=1200) : charge=974 kg
+V10 (type=2, cap=1200) : charge=456 kg
+V11 (type=2, cap=1200) : charge=0 kg
+V12 (type=2, cap=1200) : charge=1069 kg
+V13 (type=2, cap=1200) : charge=1189 kg
+V14 (type=3, cap=5000) : charge=1015 kg
+V15 (type=3, cap=5000) : charge=0 kg
+V16 (type=3, cap=5000) : charge=645 kg
+V17 (type=3, cap=5000) : charge=838 kg
+V18 (type=3, cap=5000) : charge=0 kg
+% time elapsed: 6m 16s
+----------
+%%%mzn-stat: nSolutions=55
+%%%mzn-stat-end
+Finished in 6m 41s
