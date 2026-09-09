@@ -1,0 +1,954 @@
+
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-cp-sat.exe for solving, parameters: -i -p 8 -s -v 
+%% File C:\\Users\\user\\AppData\\Local\\Temp\\tmp7490.tmp.fzn parsed in 95 ms
+%% Model C:\\Users\\user\\AppData\\Local\\Temp\\tmp7490.tmp
+%%   - boolean variables:4574
+%%   - integer variables:1500
+%%   - bool2int: 1250
+%%   - bool_clause: 2604
+%%   - int_eq_imp: 720
+%%   - int_eq_reif: 1250
+%%   - int_le_imp: 24
+%%   - int_lin_eq: 1
+%%   - int_lin_le: 25
+%%   - int_lin_le_imp: 589
+%%   - int_lin_le_reif: 1910
+%%   - int_ne_imp: 1402
+%%   - int_ne_reif: 2037
+%%   - ortools_array_int_element: 75
+%%   - ortools_circuit: 1
+%%   - Minimization problem
+%%   - #var_op_value_reif cached: 1448
+%%   - #var_op_var_reif cached: 0
+%%   - #var_op_var_imp cached: 0
+%%   - #full domain encodings: 50
+%% Starting CP-SAT solver v9.15.9999
+%% Parameters: log_search_progress: true log_to_stdout: false max_domain_size_when_encoding_eq_neq_constraints: 32 num_workers: 8
+%% Initial optimization model 'C:\\Users\\user\\AppData\\Local\\Temp\\tmp7490.tmp': (model_fingerprint: 0x6984ca357480fd36)
+%% Search strategy: on 175 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MIN_VALUE
+%% #Variables: 9'365 (#ints: 1 in objective) (8'113 primary variables)
+%%   - 9'113 Booleans in [0,1]
+%%   - 171 different domains in [0,4830] with a largest complexity of 18.
+%%   - 2 constants in {0,1} 
+%% #kBoolOr: 2'604 (#literals: 5'208)
+%% #kCircuit: 1
+%% #kElement: 75
+%% #kLinear1: 11'706 (#enforced: 11'706)
+%% #kLinear2: 7'803 (#enforced: 5'105)
+%% #kLinearN: 26 (#terms: 1'325)
+%% Starting presolve at 0.01s
+%%   3.10e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   1.14e-01s  3.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=5 #num_dual_strengthening=3 
+%%   1.69e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExtractEncodingFromLinear] #potential_supersets=1 
+%%   7.45e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateColumns] 
+%%   8.30e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%% [Symmetry] Graph for symmetry has 37'067 nodes and 54'147 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0058015 dtime: 0.00735722
+%% [SAT presolve] num removable Booleans: 0 / 5'781
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:1'340 literals:2'680 vars:2'635 one_side_vars:2635 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [0.0001229s] clauses:1'340 literals:2'680 vars:2'635 one_side_vars:2635 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [0.0005626s] clauses:1'340 literals:2'680 vars:2'635 one_side_vars:2635 simple_definition:0 singleton_clauses:0
+%%   9.21e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=5 
+%%   2.02e-01s  1.70e-01d  [operations_research::sat::CpModelPresolver::Probe] #probed=30'952 #new_binary_clauses=27'465 
+%%   5.12e-03s  8.87e-03d  [MaxClique] Merged 1'340 constraints with 2'680 literals into 1'295 constraints with 2'635 literals
+%%   3.05e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   5.61e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=2 #num_dual_strengthening=1 
+%%   2.42e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   1.09e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=5 
+%%   9.21e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=5 
+%%   3.52e-04s  3.75e-06d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=25 
+%%   4.20e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   1.68e-03s  3.35e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=1'937 
+%%   1.91e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::TransformClausesToExactlyOne] #num_amos=1'336 
+%%   2.88e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectEncodedComplexDomains] 
+%%   7.55e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   5.60e-03s  3.34e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   1.43e-03s  5.16e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   3.55e-04s  6.25e-06d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=25 
+%%   4.87e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   3.17e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.28e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   3.19e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.01e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   5.48e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateColumns] 
+%%   1.79e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] #duplicates=69 
+%% [Symmetry] Graph for symmetry has 23'895 nodes and 31'981 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0038937 dtime: 0.00575713
+%% [SAT presolve] num removable Booleans: 0 / 4'584
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:1'291 literals:2'582 vars:2'582 one_side_vars:2582 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [9.55e-05s] clauses:1'291 literals:2'582 vars:2'582 one_side_vars:2582 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [0.000374s] clauses:1'291 literals:2'582 vars:2'582 one_side_vars:2582 simple_definition:0 singleton_clauses:0
+%%   1.49e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=5 
+%%   1.16e-01s  8.16e-02d  [operations_research::sat::CpModelPresolver::Probe] #probed=22'898 #new_binary_clauses=2'627 
+%%   2.62e-03s  4.68e-03d  [MaxClique] Merged 1'336 constraints with 2'717 literals into 1'295 constraints with 2'635 literals
+%%   3.12e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.00e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   1.50e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   1.61e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   1.42e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=5 
+%%   3.48e-04s  3.75e-06d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=25 
+%%   2.99e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   1.36e-03s  2.03e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=1'395 
+%%   1.85e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::TransformClausesToExactlyOne] #num_amos=1'336 
+%%   2.30e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectEncodedComplexDomains] 
+%%   3.73e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   6.39e-03s  3.89e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   1.21e-03s  5.06e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   3.47e-04s  6.25e-06d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=25 
+%%   2.77e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   3.57e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.04e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   3.76e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.01e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   5.53e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateColumns] 
+%%   1.51e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%% [Symmetry] Graph for symmetry has 23'895 nodes and 31'981 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.0039619 dtime: 0.00575713
+%% [SAT presolve] num removable Booleans: 0 / 4'584
+%% [SAT presolve] num trivial clauses: 0
+%% [SAT presolve] [0s] clauses:1'291 literals:2'582 vars:2'582 one_side_vars:2582 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [8.03e-05s] clauses:1'291 literals:2'582 vars:2'582 one_side_vars:2582 simple_definition:0 singleton_clauses:0
+%% [SAT presolve] [0.0003449s] clauses:1'291 literals:2'582 vars:2'582 one_side_vars:2582 simple_definition:0 singleton_clauses:0
+%%   1.59e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=5 
+%%   1.18e-01s  8.16e-02d  [operations_research::sat::CpModelPresolver::Probe] #probed=22'898 #new_binary_clauses=2'627 
+%%   2.69e-03s  4.68e-03d  [MaxClique] Merged 1'336 constraints with 2'717 literals into 1'295 constraints with 2'635 literals
+%%   3.42e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.19e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   1.97e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ProcessAtMostOneAndLinear] 
+%%   2.11e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraints] 
+%%   1.74e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDuplicateConstraintsWithDifferentEnforcements] #without_enforcements=5 
+%%   4.98e-04s  3.75e-06d  [operations_research::sat::CpModelPresolver::DetectDominatedLinearConstraints] #relevant_constraints=25 
+%%   4.25e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectDifferentVariables] 
+%%   1.12e-03s  2.03e-05d  [operations_research::sat::CpModelPresolver::ProcessSetPPC] #relevant_constraints=1'395 
+%%   1.61e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::TransformClausesToExactlyOne] #num_amos=1'336 
+%%   2.06e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::DetectEncodedComplexDomains] 
+%%   4.74e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::FindAlmostIdenticalLinearConstraints] 
+%%   6.12e-03s  3.89e-03d  [operations_research::sat::CpModelPresolver::FindBigAtMostOneAndLinearOverlap] 
+%%   4.86e-03s  5.06e-04d  [operations_research::sat::CpModelPresolver::FindBigVerticalLinearOverlap] 
+%%   4.60e-04s  6.25e-06d  [operations_research::sat::CpModelPresolver::FindBigHorizontalLinearOverlap] #linears=25 
+%%   4.64e-04s  0.00e+00d  [operations_research::sat::CpModelPresolver::MergeClauses] 
+%%   3.48e-03s  0.00e+00d  [DetectDominanceRelations] 
+%%   2.04e-02s  1.00e-08d  [operations_research::sat::CpModelPresolver::PresolveToFixPoint] #num_loops=1 #num_dual_strengthening=1 
+%%   1.61e-04s  0.00e+00d  [MergeNoOverlap] 
+%%   2.24e-04s  0.00e+00d  [MergeNoOverlap2D] 
+%%   5.08e-03s  0.00e+00d  [operations_research::sat::CpModelPresolver::ExpandObjective] #entries=149'562 #tight_variables=3'289 #tight_constraints=75 #expands=5 
+%% Presolve summary:
+%%   - 5261 affine relations were detected.
+%%   - rule 'TODO domination: unexploited dominations' was applied 9 times.
+%%   - rule 'TODO dual: add implied bound' was applied 77 times.
+%%   - rule 'TODO dual: only one blocking enforced constraint?' was applied 572 times.
+%%   - rule 'TODO dual: tighten at most one' was applied 360 times.
+%%   - rule 'TODO linear1: appear in only one extra 2-var constraint' was applied 222 times.
+%%   - rule 'TODO linear2: convert ax + by != cte to clauses for large domains' was applied 152 times.
+%%   - rule 'affine: new relation' was applied 5'261 times.
+%%   - rule 'at_most_one: resolved two constraints with opposite literal' was applied 473 times.
+%%   - rule 'at_most_one: transformed into max clique' was applied 3 times.
+%%   - rule 'bool_and: x => x' was applied 3'892 times.
+%%   - rule 'bool_or: implications' was applied 2'604 times.
+%%   - rule 'deductions: 16356 stored' was applied 1 time.
+%%   - rule 'dual: enforced equivalence' was applied 3'279 times.
+%%   - rule 'dual: fix variable' was applied 1 time.
+%%   - rule 'dual: reduced domain' was applied 1 time.
+%%   - rule 'duplicate: removed constraint' was applied 74 times.
+%%   - rule 'element: expanded value element' was applied 74 times.
+%%   - rule 'element: one value array' was applied 1 time.
+%%   - rule 'enforcement: always false' was applied 1'910 times.
+%%   - rule 'incompatible linear: add implication' was applied 123 times.
+%%   - rule 'linear1: transformed to implication' was applied 2'628 times.
+%%   - rule 'linear2: implied ax + by = cte has only one solution' was applied 15 times.
+%%   - rule 'linear: always true' was applied 3'367 times.
+%%   - rule 'linear: divide by GCD' was applied 25 times.
+%%   - rule 'linear: fixed or dup variables' was applied 24 times.
+%%   - rule 'linear: remapped using affine relations' was applied 34 times.
+%%   - rule 'linear: simplified rhs' was applied 2'012 times.
+%%   - rule 'linear: singleton column define objective' was applied 1 time.
+%%   - rule 'new_bool: integer encoding' was applied 1'192 times.
+%%   - rule 'new_bool: var with 2 values' was applied 5 times.
+%%   - rule 'objective: expanded via tight equality' was applied 5 times.
+%%   - rule 'objective: shifted cost with exactly ones' was applied 65 times.
+%%   - rule 'presolve: 3 unused variables removed.' was applied 1 time.
+%%   - rule 'presolve: iteration' was applied 3 times.
+%%   - rule 'variables with 2 values: create encoding literal' was applied 5 times.
+%%   - rule 'variables with 2 values: new affine relation' was applied 5 times.
+%%   - rule 'variables: add encoding constraint' was applied 1'192 times.
+%%   - rule 'variables: canonicalize affine domain' was applied 3 times.
+%%   - rule 'variables: detect fully reified value encoding' was applied 4'539 times.
+%%   - rule 'variables: detect half reified value encoding' was applied 9'109 times.
+%%   - rule 'variables: only used in objective and in encodings' was applied 69 times.
+%%   - rule 'variables: only used in value and order encodings' was applied 75 times.
+%% Presolved optimization model 'C:\\Users\\user\\AppData\\Local\\Temp\\tmp7490.tmp': (model_fingerprint: 0x1f67527a4c7c1ef1)
+%% Search strategy: on 99 variables, CHOOSE_MIN_DOMAIN_SIZE, SELECT_MIN_VALUE
+%% #Variables: 4'683 (#bools: 2'997 in objective) (4'608 primary variables)
+%%   - 4'584 Booleans in [0,1]
+%%   - 50 in [1,25]
+%%   - 1 in [34,63]
+%%   - 1 in [35,65]
+%%   - 1 in [37,67]
+%%   - 1 in [38,67]
+%%   - 1 in [41,71]
+%%   - 1 in [43,73]
+%%   - 1 in [45,75]
+%%   - 1 in [50,80]
+%%   - 1 in [51,81]
+%%   - 1 in [58,88]
+%%   - 1 in [59,89]
+%%   - 1 in [61,91]
+%%   - 2 in [62,92]
+%%   - 2 in [64,94]
+%%   - 1 in [65,95]
+%%   - 2 in [67,97]
+%%   - 2 in [72,102]
+%%   - 1 in [74,104]
+%%   - 1 in [75,105]
+%%   - 1 in [79,109]
+%%   - 1 in [85,115]
+%%   - 1 in [87,117]
+%%   - 2 in [91,121]
+%%   - 2 in [92,122]
+%%   - 1 in [95,125]
+%%   - 1 in [104,134]
+%%   - 1 in [109,139]
+%%   - 1 in [111,141]
+%%   - 1 in [113,143]
+%%   - 1 in [115,145]
+%%   - 1 in [116,146]
+%%   - 1 in [119,149]
+%%   - 1 in [124,154]
+%%   - 1 in [128,158]
+%%   - 1 in [131,152]
+%%   - 1 in [139,169]
+%%   - 1 in [141,171]
+%%   - 1 in [142,172]
+%%   - 1 in [145,175]
+%%   - 1 in [148,178]
+%%   - 1 in [149,179]
+%%   - 1 in [151,181]
+%%   - 1 in [154,184]
+%% #kAtMostOne: 45 (#literals: 135)
+%% #kBoolAnd: 1'291 (#enforced: 1'291) (#literals: 2'582)
+%% #kCircuit: 1
+%% #kExactlyOne: 75 (#literals: 3'289)
+%% #kLinear1: 2'545 (#enforced: 2'545)
+%% #kLinear2: 1'246 (#enforced: 1'246)
+%% #kLinearN: 25 (#terms: 1'250)
+%% [Symmetry] Graph for symmetry has 18'013 nodes and 31'981 arcs.
+%% [Symmetry] Symmetry computation done. time: 0.003553 dtime: 0.00547434
+%% Preloading model.
+%% #Bound   0.97s best:inf   next:[318,4830] initial_domain
+%% #Model   0.97s var:4683/4683 constraints:5228/5228
+%% Starting search at 0.98s with 8 workers.
+%% 6 full problem subsolvers: [core, default_lp, fixed, max_lp, no_lp, quick_restart]
+%% 2 first solution subsolvers: [fj, fs_random_no_lp]
+%% 11 interleaved subsolvers: [feasibility_pump, graph_arc_lns, graph_cst_lns, graph_dec_lns, graph_var_lns, ls, rins/rens, rnd_cst_lns, rnd_var_lns, routing_path_lns, routing_random_lns]
+%% 3 helper subsolvers: [neighborhood_helper, synchronization_agent, update_gap_integral]
+%% #Bound   1.25s best:inf   next:[349,4830] am1_presolve (num_literals=2997 num_am1=10 increase=81 work_done=18396)
+%% #Bound   1.26s best:inf   next:[367,4830] fixed
+%% #Bound   1.28s best:inf   next:[394,4830] quick_restart
+%% #Bound   1.28s best:inf   next:[415,4830] quick_restart
+%% #Bound   1.33s best:inf   next:[614,4830] max_lp
+%% #1       1.42s best:1785  next:[614,1784] rens_pump_lns (d=5.00e-01 s=10 t=0.10 p=0.00 stall=0 h=base)
+%%%mzn-stat: boolVariables=0
+%%%mzn-stat: failures=0
+%%%mzn-stat: objective=1785
+%%%mzn-stat: objectiveBound=614
+%%%mzn-stat: propagations=0
+%%%mzn-stat: solveTime=1.41729
+%%%mzn-stat-end
+Distance totale = 1785
+Suivant = [66, 45, 46, 1, 3, 7, 71, 74, 10, 13, 9, 11, 75, 16, 47, 17, 73, 19, 22, 48, 18, 49, 72, 51, 24, 32, 29, 27, 70, 62, 33, 68, 30, 26, 37, 39, 69, 44, 67, 65, 40, 64, 63, 54, 61, 4, 60, 59, 20, 58, 52, 53, 2, 55, 56, 50, 43, 42, 41, 38, 36, 35, 34, 31, 12, 28, 23, 25, 21, 14, 15, 8, 6, 5, 57]
+Vehicules = [24, 3, 24, 24, 24, 23, 23, 22, 15, 15, 15, 15, 15, 20, 21, 20, 20, 19, 19, 19, 19, 19, 17, 18, 18, 13, 16, 16, 16, 14, 14, 13, 14, 13, 12, 11, 12, 10, 11, 9, 9, 8, 7, 10, 3, 24, 21, 19, 19, 6]
+% time elapsed: 14s 157msec
+----------
+%% #Bound   1.51s best:1785  next:[704,1784] max_lp
+%% #Bound   1.54s best:1785  next:[757,1784] max_lp
+%% #2       1.55s best:1752  next:[757,1751] rnd_cst_lns (d=5.00e-01 s=12 t=0.10 p=0.00 stall=0 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1752
+%%%mzn-stat: objectiveBound=757
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=1.55452
+%%%mzn-stat-end
+Distance totale = 1752
+Suivant = [66, 45, 46, 1, 3, 7, 71, 74, 57, 13, 10, 11, 75, 16, 47, 17, 73, 19, 22, 48, 18, 49, 72, 60, 24, 32, 29, 27, 70, 34, 33, 51, 30, 26, 37, 39, 69, 44, 67, 65, 40, 64, 63, 54, 61, 4, 68, 59, 20, 58, 52, 53, 2, 55, 56, 50, 43, 9, 41, 38, 36, 42, 35, 31, 12, 28, 23, 25, 21, 14, 15, 8, 6, 5, 62]
+Vehicules = [24, 3, 24, 24, 24, 23, 23, 22, 8, 15, 15, 15, 15, 20, 21, 20, 20, 19, 19, 19, 19, 19, 17, 18, 18, 14, 16, 16, 16, 14, 14, 14, 14, 14, 13, 11, 13, 10, 11, 9, 9, 12, 7, 10, 3, 24, 21, 19, 19, 6]
+% time elapsed: 14s 294msec
+----------
+%% #3       1.56s best:1706  next:[757,1705] graph_arc_lns (d=5.00e-01 s=14 t=0.10 p=0.00 stall=0 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1706
+%%%mzn-stat: objectiveBound=757
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=1.56113
+%%%mzn-stat-end
+Distance totale = 1706
+Suivant = [66, 45, 46, 1, 3, 7, 54, 74, 10, 60, 9, 11, 75, 16, 13, 17, 73, 19, 22, 48, 18, 49, 64, 51, 24, 32, 29, 27, 70, 31, 62, 68, 30, 26, 37, 39, 69, 44, 67, 65, 40, 35, 63, 71, 61, 4, 15, 59, 20, 58, 52, 53, 2, 55, 56, 50, 43, 47, 41, 38, 36, 42, 34, 33, 12, 28, 23, 25, 21, 14, 72, 8, 6, 5, 57]
+Vehicules = [24, 3, 24, 24, 24, 23, 23, 22, 15, 15, 15, 15, 8, 20, 8, 20, 20, 19, 19, 19, 19, 19, 17, 18, 18, 13, 16, 16, 16, 14, 14, 13, 14, 13, 12, 11, 12, 10, 11, 9, 9, 12, 7, 10, 3, 24, 8, 19, 19, 6]
+% time elapsed: 14s 301msec
+----------
+%% #4       2.07s best:1676  next:[757,1675] core (fixed_bools=0/5805)
+%%%mzn-stat: boolVariables=5805
+%%%mzn-stat: failures=1345
+%%%mzn-stat: objective=1676
+%%%mzn-stat: objectiveBound=757
+%%%mzn-stat: propagations=2728800
+%%%mzn-stat: solveTime=2.07351
+%%%mzn-stat-end
+Distance totale = 1676
+Suivant = [51, 40, 54, 1, 46, 7, 74, 3, 63, 67, 10, 11, 55, 8, 59, 15, 73, 22, 18, 24, 49, 65, 25, 62, 48, 34, 29, 26, 31, 50, 30, 66, 28, 32, 61, 41, 35, 72, 42, 37, 56, 69, 57, 38, 43, 4, 14, 60, 20, 71, 52, 53, 45, 44, 36, 12, 23, 39, 33, 16, 27, 5, 64, 6, 47, 13, 68, 19, 70, 17, 21, 9, 2, 75, 58]
+Vehicules = [12, 23, 15, 12, 12, 14, 14, 15, 22, 6, 6, 6, 16, 15, 10, 10, 20, 18, 18, 21, 21, 18, 7, 21, 7, 9, 11, 9, 11, 11, 11, 9, 9, 9, 23, 5, 23, 4, 8, 23, 5, 8, 3, 4, 3, 12, 15, 7, 21, 11]
+% time elapsed: 14s 813msec
+----------
+%% #5       2.26s best:1545  next:[757,1544] routing_random_lns (d=5.00e-01 s=17 t=0.10 p=0.00 stall=0 h=routing) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1545
+%%%mzn-stat: objectiveBound=757
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=2.25523
+%%%mzn-stat-end
+Distance totale = 1545
+Suivant = [66, 45, 46, 1, 3, 7, 54, 74, 10, 53, 9, 11, 75, 16, 13, 17, 73, 61, 21, 48, 18, 49, 19, 51, 24, 32, 29, 27, 70, 31, 62, 64, 30, 26, 37, 39, 69, 35, 40, 65, 43, 44, 63, 71, 8, 4, 15, 59, 20, 58, 52, 41, 28, 55, 56, 50, 22, 47, 60, 38, 36, 2, 34, 6, 12, 67, 68, 25, 42, 14, 72, 23, 33, 5, 57]
+Vehicules = [24, 12, 24, 24, 24, 14, 14, 12, 15, 15, 15, 15, 8, 20, 8, 20, 20, 22, 22, 7, 22, 7, 22, 18, 18, 13, 3, 3, 3, 23, 23, 13, 23, 13, 10, 11, 10, 10, 11, 11, 2, 19, 2, 19, 12, 24, 8, 7, 7, 6]
+% time elapsed: 14s 995msec
+----------
+%% #6       2.77s best:1539  next:[757,1538] rnd_var_lns (d=7.07e-01 s=21 t=0.10 p=1.00 stall=1 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1539
+%%%mzn-stat: objectiveBound=757
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=2.76734
+%%%mzn-stat-end
+Distance totale = 1539
+Suivant = [66, 45, 46, 1, 3, 7, 54, 74, 10, 64, 9, 11, 69, 16, 53, 17, 13, 49, 21, 73, 48, 20, 19, 51, 24, 32, 29, 27, 75, 31, 62, 61, 30, 26, 63, 39, 35, 37, 40, 65, 43, 44, 70, 71, 8, 4, 15, 59, 25, 58, 52, 41, 28, 55, 56, 50, 22, 47, 60, 38, 36, 2, 34, 6, 12, 67, 68, 18, 42, 14, 72, 23, 33, 5, 57]
+Vehicules = [24, 12, 24, 24, 24, 14, 14, 12, 15, 15, 15, 15, 20, 20, 8, 20, 20, 18, 22, 7, 22, 7, 22, 18, 18, 13, 3, 3, 3, 23, 23, 13, 23, 13, 10, 11, 10, 10, 11, 11, 2, 19, 2, 19, 12, 24, 8, 22, 18, 6]
+% time elapsed: 15s 507msec
+----------
+%% #7       3.23s best:1528  next:[757,1527] graph_arc_lns (d=7.07e-01 s=23 t=0.10 p=1.00 stall=0 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1528
+%%%mzn-stat: objectiveBound=757
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=3.22827
+%%%mzn-stat-end
+Distance totale = 1528
+Suivant = [71, 45, 46, 1, 3, 7, 56, 70, 10, 66, 9, 11, 69, 16, 53, 17, 13, 49, 21, 74, 48, 20, 19, 51, 24, 32, 29, 27, 75, 31, 62, 61, 30, 26, 63, 39, 35, 37, 40, 65, 64, 44, 54, 43, 8, 4, 15, 59, 25, 58, 52, 41, 28, 55, 23, 50, 22, 47, 60, 38, 36, 2, 34, 6, 12, 67, 68, 18, 42, 14, 72, 73, 33, 5, 57]
+Vehicules = [24, 12, 24, 24, 24, 14, 14, 12, 15, 15, 15, 15, 20, 20, 8, 20, 20, 18, 5, 7, 5, 7, 5, 18, 18, 13, 3, 3, 3, 23, 23, 13, 23, 13, 10, 11, 10, 10, 11, 11, 2, 19, 19, 19, 12, 24, 8, 5, 18, 6]
+% time elapsed: 15s 968msec
+----------
+%% #Bound   3.38s best:1528  next:[759,1527] max_lp
+%% #8       3.51s best:1521  next:[759,1520] quick_restart (fixed_bools=0/5800)
+%%%mzn-stat: boolVariables=5800
+%%%mzn-stat: failures=10
+%%%mzn-stat: objective=1521
+%%%mzn-stat: objectiveBound=759
+%%%mzn-stat: propagations=10285184
+%%%mzn-stat: solveTime=3.50865
+%%%mzn-stat-end
+Distance totale = 1521
+Suivant = [71, 45, 46, 1, 3, 7, 56, 70, 10, 66, 9, 11, 69, 16, 53, 17, 13, 49, 21, 74, 48, 20, 19, 51, 24, 32, 29, 27, 75, 31, 62, 61, 30, 26, 63, 40, 35, 37, 36, 65, 64, 44, 54, 43, 8, 4, 15, 59, 25, 58, 52, 41, 28, 55, 23, 50, 22, 47, 60, 38, 39, 2, 34, 6, 12, 67, 68, 18, 42, 14, 72, 73, 33, 5, 57]
+Vehicules = [24, 12, 24, 24, 24, 14, 14, 12, 15, 15, 15, 15, 20, 20, 8, 20, 20, 18, 5, 7, 5, 7, 5, 18, 18, 13, 3, 3, 3, 23, 23, 13, 23, 13, 10, 11, 10, 10, 11, 11, 2, 19, 19, 19, 12, 24, 8, 5, 18, 6]
+% time elapsed: 16s 248msec
+----------
+%% #Bound   3.63s best:1521  next:[770,1520] max_lp
+%% #Bound   3.68s best:1521  next:[774,1520] max_lp
+%% #9       3.70s best:1517  next:[774,1516] graph_dec_lns (d=7.07e-01 s=25 t=0.10 p=1.00 stall=1 h=base) [combined with: quick_restart...] (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1517
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=3.70198
+%%%mzn-stat-end
+Distance totale = 1517
+Suivant = [64, 45, 46, 1, 3, 59, 56, 7, 10, 66, 9, 11, 69, 16, 53, 17, 13, 49, 21, 74, 48, 20, 19, 75, 24, 32, 29, 27, 65, 31, 62, 61, 30, 26, 63, 40, 35, 37, 36, 51, 70, 44, 54, 43, 8, 4, 15, 71, 25, 58, 52, 41, 28, 55, 23, 50, 22, 47, 60, 38, 39, 2, 34, 6, 12, 67, 68, 18, 42, 14, 72, 73, 33, 5, 57]
+Vehicules = [24, 12, 24, 24, 24, 14, 12, 12, 15, 15, 15, 15, 20, 20, 8, 20, 20, 18, 5, 7, 5, 7, 5, 18, 18, 13, 3, 3, 3, 23, 23, 13, 23, 13, 10, 11, 10, 10, 11, 11, 2, 19, 19, 19, 12, 24, 8, 5, 18, 6]
+% time elapsed: 16s 442msec
+----------
+%% #10      3.98s best:1465  next:[774,1464] rnd_cst_lns (d=7.07e-01 s=26 t=0.10 p=1.00 stall=0 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1465
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=3.98398
+%%%mzn-stat-end
+Distance totale = 1465
+Suivant = [51, 45, 46, 1, 3, 7, 65, 74, 10, 66, 9, 11, 56, 16, 47, 17, 13, 49, 21, 62, 48, 20, 19, 25, 60, 32, 29, 27, 61, 31, 69, 70, 30, 26, 63, 40, 35, 37, 36, 41, 64, 44, 75, 43, 8, 4, 54, 71, 24, 58, 52, 53, 28, 55, 23, 50, 22, 59, 15, 38, 39, 2, 34, 6, 12, 67, 68, 18, 42, 14, 72, 73, 33, 5, 57]
+Vehicules = [24, 12, 24, 24, 24, 14, 14, 12, 15, 15, 15, 15, 20, 20, 9, 20, 20, 18, 5, 7, 5, 7, 5, 18, 18, 13, 3, 3, 3, 23, 23, 13, 23, 13, 10, 11, 10, 10, 11, 11, 11, 19, 19, 19, 12, 24, 9, 5, 18, 6]
+% time elapsed: 16s 724msec
+----------
+%% #11      4.34s best:1463  next:[774,1462] default_lp (fixed_bools=0/5758)
+%%%mzn-stat: boolVariables=5758
+%%%mzn-stat: failures=266
+%%%mzn-stat: objective=1463
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10376315
+%%%mzn-stat: solveTime=4.34406
+%%%mzn-stat-end
+Distance totale = 1463
+Suivant = [4, 6, 1, 52, 2, 7, 62, 55, 10, 53, 9, 61, 59, 12, 13, 15, 60, 19, 17, 24, 18, 20, 49, 69, 71, 32, 34, 48, 31, 28, 58, 54, 30, 50, 37, 44, 51, 41, 35, 38, 43, 39, 68, 40, 5, 3, 14, 25, 22, 57, 21, 23, 47, 46, 26, 27, 11, 45, 29, 36, 8, 63, 64, 65, 66, 67, 42, 33, 70, 16, 72, 73, 74, 75, 56]
+Vehicules = [4, 8, 4, 4, 8, 8, 8, 11, 7, 7, 7, 3, 20, 3, 20, 20, 1, 1, 1, 2, 1, 2, 2, 2, 18, 5, 6, 18, 9, 18, 9, 5, 18, 6, 17, 10, 17, 10, 17, 10, 10, 17, 10, 10, 8, 4, 3, 18, 2, 6]
+% time elapsed: 17s 84msec
+----------
+%% #12      4.39s best:1441  next:[774,1440] quick_restart (fixed_bools=0/5845)
+%%%mzn-stat: boolVariables=5845
+%%%mzn-stat: failures=71
+%%%mzn-stat: objective=1441
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10353671
+%%%mzn-stat: solveTime=4.39088
+%%%mzn-stat-end
+Distance totale = 1441
+Suivant = [74, 45, 46, 1, 3, 7, 62, 75, 10, 73, 9, 11, 71, 16, 47, 17, 13, 49, 21, 68, 48, 20, 19, 25, 65, 32, 29, 27, 64, 31, 34, 54, 30, 26, 63, 40, 35, 37, 36, 41, 60, 44, 61, 58, 8, 4, 57, 56, 24, 51, 52, 53, 28, 55, 23, 50, 22, 59, 15, 38, 39, 2, 33, 6, 66, 67, 42, 69, 70, 14, 72, 43, 18, 12, 5]
+Vehicules = [25, 12, 25, 25, 25, 14, 14, 12, 24, 24, 24, 24, 20, 20, 9, 20, 20, 23, 5, 7, 5, 7, 5, 23, 23, 13, 3, 3, 3, 13, 13, 13, 13, 13, 10, 11, 10, 10, 11, 11, 11, 17, 22, 17, 12, 25, 9, 5, 23, 6]
+% time elapsed: 17s 131msec
+----------
+%% #13      4.58s best:1221  next:[774,1220] default_lp (fixed_bools=0/5777)
+%%%mzn-stat: boolVariables=5777
+%%%mzn-stat: failures=302
+%%%mzn-stat: objective=1221
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10403289
+%%%mzn-stat: solveTime=4.58036
+%%%mzn-stat-end
+Distance totale = 1221
+Suivant = [53, 6, 61, 1, 3, 51, 8, 46, 10, 13, 9, 74, 17, 2, 47, 12, 71, 19, 48, 24, 49, 20, 21, 60, 54, 34, 31, 33, 26, 50, 29, 57, 30, 32, 37, 40, 69, 41, 42, 38, 43, 36, 52, 35, 5, 4, 56, 25, 22, 55, 39, 23, 16, 45, 27, 7, 11, 59, 28, 18, 62, 63, 64, 65, 66, 67, 68, 15, 70, 14, 72, 73, 44, 75, 58]
+Vehicules = [6, 20, 4, 6, 4, 20, 6, 6, 7, 7, 7, 3, 7, 20, 18, 3, 7, 10, 10, 2, 2, 2, 2, 2, 10, 5, 5, 9, 5, 9, 5, 5, 9, 5, 23, 1, 23, 1, 1, 1, 1, 1, 1, 23, 4, 6, 18, 10, 2, 9]
+% time elapsed: 17s 320msec
+----------
+%% #14      4.85s best:1218  next:[774,1217] default_lp (fixed_bools=0/5793)
+%%%mzn-stat: boolVariables=5793
+%%%mzn-stat: failures=342
+%%%mzn-stat: objective=1218
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10443747
+%%%mzn-stat: solveTime=4.84643
+%%%mzn-stat-end
+Distance totale = 1218
+Suivant = [59, 45, 46, 1, 3, 69, 6, 7, 10, 24, 9, 11, 51, 47, 17, 15, 13, 19, 49, 75, 22, 20, 21, 56, 65, 32, 26, 33, 27, 31, 34, 54, 55, 50, 68, 35, 43, 41, 40, 38, 37, 44, 53, 57, 8, 4, 16, 25, 48, 52, 36, 28, 29, 12, 5, 42, 58, 18, 60, 61, 62, 63, 64, 2, 66, 67, 30, 23, 70, 71, 72, 73, 74, 14, 39]
+Vehicules = [5, 14, 5, 5, 5, 14, 14, 14, 4, 4, 4, 4, 24, 24, 24, 24, 24, 8, 8, 18, 18, 18, 18, 4, 8, 3, 3, 2, 3, 17, 17, 3, 2, 17, 1, 1, 25, 25, 25, 25, 25, 6, 25, 6, 14, 5, 24, 8, 8, 17]
+% time elapsed: 17s 589msec
+----------
+%% #15      5.05s best:1214  next:[774,1213] quick_restart (fixed_bools=0/5864)
+%%%mzn-stat: boolVariables=5864
+%%%mzn-stat: failures=121
+%%%mzn-stat: objective=1214
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10433589
+%%%mzn-stat: solveTime=5.04893
+%%%mzn-stat-end
+Distance totale = 1214
+Suivant = [59, 45, 46, 1, 3, 69, 6, 7, 10, 24, 9, 11, 51, 47, 17, 15, 13, 19, 49, 75, 22, 20, 21, 56, 65, 32, 26, 33, 27, 31, 34, 54, 55, 50, 68, 35, 43, 41, 40, 38, 74, 44, 53, 37, 8, 4, 16, 25, 48, 52, 36, 28, 29, 12, 5, 57, 58, 18, 60, 61, 62, 63, 64, 2, 66, 67, 30, 23, 70, 71, 72, 73, 39, 14, 42]
+Vehicules = [5, 14, 5, 5, 5, 14, 14, 14, 4, 4, 4, 4, 24, 24, 24, 24, 24, 8, 8, 18, 18, 18, 18, 4, 8, 3, 3, 2, 3, 17, 17, 3, 2, 17, 1, 1, 25, 23, 23, 23, 23, 25, 25, 25, 14, 5, 24, 8, 8, 17]
+% time elapsed: 17s 789msec
+----------
+%% #16      5.09s best:1194  next:[774,1193] graph_var_lns (d=8.08e-01 s=44 t=0.10 p=0.75 stall=4 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1194
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=5.0929
+%%%mzn-stat-end
+Distance totale = 1194
+Suivant = [4, 6, 57, 71, 3, 54, 8, 46, 10, 13, 9, 16, 17, 2, 47, 74, 56, 48, 18, 24, 49, 20, 21, 60, 55, 34, 26, 30, 27, 50, 29, 53, 28, 32, 37, 40, 52, 41, 36, 38, 43, 39, 69, 35, 5, 1, 51, 25, 22, 61, 42, 23, 12, 45, 31, 7, 11, 59, 33, 19, 62, 63, 64, 65, 66, 67, 68, 15, 70, 14, 72, 73, 44, 75, 58]
+Vehicules = [6, 20, 4, 6, 4, 20, 6, 6, 7, 7, 7, 3, 7, 20, 18, 3, 7, 10, 10, 2, 2, 2, 2, 2, 10, 5, 5, 9, 5, 9, 5, 5, 9, 5, 23, 1, 23, 1, 1, 1, 1, 1, 1, 23, 4, 6, 18, 10, 2, 9]
+% time elapsed: 17s 833msec
+----------
+%% #17      5.25s best:1189  next:[774,1188] quick_restart (fixed_bools=0/5893)
+%%%mzn-stat: boolVariables=5893
+%%%mzn-stat: failures=132
+%%%mzn-stat: objective=1189
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10473462
+%%%mzn-stat: solveTime=5.25442
+%%%mzn-stat-end
+Distance totale = 1189
+Suivant = [71, 6, 57, 1, 3, 54, 8, 46, 10, 13, 9, 16, 17, 2, 47, 74, 56, 48, 18, 24, 49, 20, 21, 60, 55, 34, 26, 30, 27, 50, 29, 53, 28, 32, 37, 40, 52, 41, 36, 38, 43, 39, 69, 35, 5, 4, 51, 25, 22, 61, 42, 23, 12, 45, 31, 7, 11, 59, 33, 19, 62, 63, 64, 65, 66, 67, 68, 15, 70, 14, 72, 73, 44, 75, 58]
+Vehicules = [6, 20, 4, 6, 4, 20, 6, 6, 7, 7, 7, 3, 7, 20, 18, 3, 7, 10, 10, 2, 2, 2, 2, 2, 10, 5, 5, 9, 5, 9, 5, 5, 9, 5, 23, 1, 23, 1, 1, 1, 1, 1, 1, 23, 4, 6, 18, 10, 2, 9]
+% time elapsed: 17s 994msec
+----------
+%% #18      5.40s best:1187  next:[774,1186] quick_restart (fixed_bools=0/5895)
+%%%mzn-stat: boolVariables=5895
+%%%mzn-stat: failures=132
+%%%mzn-stat: objective=1187
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10486178
+%%%mzn-stat: solveTime=5.4039
+%%%mzn-stat-end
+Distance totale = 1187
+Suivant = [71, 6, 57, 1, 3, 54, 8, 46, 10, 13, 9, 16, 17, 2, 47, 74, 56, 48, 18, 24, 49, 20, 21, 60, 55, 34, 26, 30, 27, 50, 29, 53, 28, 32, 37, 40, 52, 41, 36, 38, 43, 44, 69, 35, 5, 4, 51, 25, 22, 61, 39, 23, 12, 45, 31, 7, 11, 59, 33, 19, 62, 63, 64, 65, 66, 67, 68, 15, 70, 14, 72, 73, 42, 75, 58]
+Vehicules = [6, 20, 4, 6, 4, 20, 6, 6, 7, 7, 7, 3, 7, 20, 18, 3, 7, 10, 10, 2, 2, 2, 2, 2, 10, 5, 5, 9, 5, 9, 5, 5, 9, 5, 23, 1, 23, 1, 1, 1, 1, 23, 1, 23, 4, 6, 18, 10, 2, 9]
+% time elapsed: 18s 144msec
+----------
+%% #19      5.60s best:1172  next:[774,1171] rnd_var_lns (d=7.87e-01 s=47 t=0.10 p=0.75 stall=2 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1172
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=5.60072
+%%%mzn-stat-end
+Distance totale = 1172
+Suivant = [59, 45, 46, 1, 3, 75, 6, 7, 10, 69, 9, 11, 65, 47, 17, 15, 13, 19, 49, 24, 22, 20, 21, 56, 55, 32, 26, 29, 27, 31, 34, 54, 51, 50, 68, 35, 43, 41, 40, 38, 74, 44, 53, 37, 8, 4, 16, 25, 48, 52, 36, 33, 28, 12, 5, 57, 58, 18, 60, 61, 62, 63, 64, 2, 66, 67, 30, 23, 70, 71, 72, 73, 39, 14, 42]
+Vehicules = [5, 14, 5, 5, 5, 14, 14, 14, 4, 4, 4, 4, 24, 24, 24, 24, 24, 8, 8, 18, 18, 18, 18, 18, 8, 3, 3, 3, 3, 17, 17, 3, 2, 17, 1, 1, 25, 23, 23, 23, 23, 25, 25, 25, 14, 5, 24, 8, 8, 17]
+% time elapsed: 18s 340msec
+----------
+%% #20      6.03s best:1168  next:[774,1167] quick_restart (fixed_bools=0/5907)
+%%%mzn-stat: boolVariables=5907
+%%%mzn-stat: failures=196
+%%%mzn-stat: objective=1168
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10584500
+%%%mzn-stat: solveTime=6.0312
+%%%mzn-stat-end
+Distance totale = 1168
+Suivant = [69, 45, 46, 1, 3, 75, 6, 7, 10, 59, 9, 11, 65, 47, 17, 15, 13, 19, 49, 24, 22, 20, 21, 56, 55, 32, 26, 29, 27, 31, 34, 54, 53, 50, 68, 35, 51, 41, 40, 38, 74, 44, 37, 43, 8, 4, 16, 25, 48, 52, 36, 33, 28, 12, 5, 57, 58, 18, 60, 61, 62, 63, 64, 2, 66, 67, 30, 23, 70, 71, 72, 73, 39, 14, 42]
+Vehicules = [5, 14, 5, 5, 5, 14, 14, 14, 4, 4, 4, 4, 24, 24, 24, 24, 24, 8, 8, 18, 18, 18, 18, 18, 8, 3, 3, 3, 3, 17, 17, 3, 2, 17, 1, 1, 25, 23, 23, 23, 23, 25, 25, 25, 14, 5, 24, 8, 8, 17]
+% time elapsed: 18s 771msec
+----------
+%% #21      6.59s best:1131  next:[774,1130] quick_restart (fixed_bools=0/5917)
+%%%mzn-stat: boolVariables=5917
+%%%mzn-stat: failures=235
+%%%mzn-stat: objective=1131
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10659425
+%%%mzn-stat: solveTime=6.59205
+%%%mzn-stat-end
+Distance totale = 1131
+Suivant = [69, 45, 46, 1, 3, 75, 6, 7, 53, 59, 10, 11, 65, 47, 17, 15, 13, 19, 49, 24, 22, 20, 21, 56, 55, 32, 26, 29, 27, 31, 34, 54, 30, 50, 68, 35, 51, 41, 40, 38, 74, 44, 37, 43, 8, 4, 16, 25, 48, 52, 36, 9, 28, 12, 5, 57, 58, 18, 60, 61, 62, 63, 64, 2, 66, 67, 33, 23, 70, 71, 72, 73, 39, 14, 42]
+Vehicules = [5, 14, 5, 5, 5, 14, 14, 14, 2, 4, 4, 4, 24, 24, 24, 24, 24, 8, 8, 18, 18, 18, 18, 18, 8, 3, 3, 3, 3, 17, 17, 3, 17, 17, 1, 1, 25, 23, 23, 23, 23, 25, 25, 25, 14, 5, 24, 8, 8, 17]
+% time elapsed: 19s 332msec
+----------
+%% #22      6.76s best:1129  next:[774,1128] quick_restart (fixed_bools=0/5918)
+%%%mzn-stat: boolVariables=5918
+%%%mzn-stat: failures=242
+%%%mzn-stat: objective=1129
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=10690011
+%%%mzn-stat: solveTime=6.75517
+%%%mzn-stat-end
+Distance totale = 1129
+Suivant = [75, 45, 1, 71, 3, 46, 6, 7, 69, 59, 10, 11, 53, 47, 17, 15, 13, 19, 49, 24, 22, 20, 21, 56, 55, 32, 26, 29, 27, 31, 34, 54, 30, 50, 68, 35, 51, 41, 40, 38, 74, 44, 37, 43, 8, 4, 16, 25, 48, 52, 36, 9, 28, 12, 2, 57, 58, 18, 60, 61, 62, 63, 64, 65, 66, 67, 33, 23, 70, 5, 72, 73, 39, 14, 42]
+Vehicules = [20, 5, 20, 5, 20, 5, 5, 5, 2, 4, 4, 4, 24, 24, 24, 24, 24, 8, 8, 18, 18, 18, 18, 18, 8, 3, 3, 3, 3, 17, 17, 3, 17, 17, 1, 1, 25, 23, 23, 23, 23, 25, 25, 25, 5, 5, 24, 8, 8, 17]
+% time elapsed: 19s 495msec
+----------
+%% #23      7.21s best:1114  next:[774,1113] routing_path_lns (d=4.62e-01 s=57 t=0.10 p=0.50 stall=2 h=routing) [combined with: quick_restart...] (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1114
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=7.21032
+%%%mzn-stat-end
+Distance totale = 1114
+Suivant = [69, 45, 46, 1, 3, 75, 6, 7, 53, 55, 10, 11, 58, 47, 17, 15, 13, 48, 49, 24, 18, 20, 21, 65, 66, 32, 26, 29, 27, 31, 34, 54, 30, 50, 61, 35, 51, 41, 40, 38, 74, 44, 37, 43, 8, 4, 16, 25, 22, 52, 19, 9, 28, 12, 56, 57, 5, 59, 60, 42, 62, 63, 64, 2, 36, 67, 33, 23, 70, 71, 72, 73, 39, 14, 68]
+Vehicules = [7, 14, 7, 7, 7, 14, 14, 14, 2, 4, 4, 4, 24, 24, 24, 24, 24, 18, 1, 1, 18, 1, 18, 1, 18, 3, 3, 3, 3, 17, 17, 3, 17, 17, 15, 15, 10, 23, 23, 23, 23, 10, 10, 10, 14, 7, 24, 18, 1, 17]
+% time elapsed: 19s 950msec
+----------
+%% #24      7.43s best:1102  next:[774,1101] graph_arc_lns (d=5.54e-01 s=63 t=0.10 p=0.50 stall=0 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1102
+%%%mzn-stat: objectiveBound=774
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=7.42808
+%%%mzn-stat-end
+Distance totale = 1102
+Suivant = [69, 45, 46, 1, 3, 75, 6, 7, 53, 55, 10, 11, 58, 47, 17, 15, 13, 48, 49, 24, 18, 20, 21, 65, 51, 32, 26, 29, 27, 31, 34, 54, 30, 50, 37, 35, 74, 41, 40, 38, 66, 44, 52, 43, 8, 4, 16, 25, 22, 61, 19, 9, 28, 12, 56, 57, 5, 59, 60, 42, 62, 63, 64, 2, 36, 67, 33, 23, 70, 71, 72, 73, 39, 14, 68]
+Vehicules = [7, 14, 7, 7, 7, 14, 14, 14, 2, 4, 4, 4, 24, 24, 24, 24, 24, 18, 1, 1, 18, 1, 18, 1, 18, 3, 3, 3, 3, 17, 17, 3, 17, 17, 15, 15, 15, 23, 23, 23, 23, 10, 10, 10, 14, 7, 24, 18, 1, 17]
+% time elapsed: 20s 168msec
+----------
+%% #Bound   7.43s best:1102  next:[778,1101] max_lp
+%% #25      7.47s best:1068  next:[778,1067] routing_random_lns (d=4.62e-01 s=60 t=0.10 p=0.50 stall=1 h=routing) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1068
+%%%mzn-stat: objectiveBound=778
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=7.46646
+%%%mzn-stat-end
+Distance totale = 1068
+Suivant = [75, 45, 1, 59, 3, 46, 6, 7, 10, 56, 9, 11, 53, 47, 17, 15, 13, 19, 49, 24, 22, 20, 21, 71, 55, 32, 26, 29, 27, 31, 34, 69, 30, 50, 68, 35, 51, 41, 36, 43, 74, 44, 37, 40, 8, 4, 16, 25, 48, 65, 52, 39, 54, 12, 33, 57, 58, 18, 60, 61, 62, 63, 64, 28, 66, 67, 38, 23, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 4, 4, 4, 4, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 14, 14, 14, 14, 5, 5, 14, 5, 5, 2, 2, 25, 17, 2, 25, 17, 25, 25, 25, 24, 24, 23, 8, 8, 5]
+% time elapsed: 20s 207msec
+----------
+%% #Bound   7.67s best:1068  next:[780,1067] max_lp
+%% #Bound   7.86s best:1068  next:[784,1067] max_lp
+%% #26      8.01s best:1065  next:[784,1064] graph_var_lns (d=8.03e-01 s=68 t=0.10 p=0.67 stall=1 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=1065
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=8.00512
+%%%mzn-stat-end
+Distance totale = 1065
+Suivant = [65, 45, 1, 71, 3, 46, 6, 7, 10, 74, 9, 11, 55, 47, 17, 15, 13, 49, 18, 24, 23, 20, 22, 56, 53, 32, 29, 26, 28, 31, 34, 69, 30, 50, 68, 35, 43, 41, 36, 37, 51, 44, 59, 40, 8, 4, 16, 25, 48, 75, 52, 39, 54, 12, 33, 57, 58, 19, 60, 61, 62, 63, 64, 27, 66, 67, 38, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 4, 4, 4, 4, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 14, 14, 14, 14, 5, 5, 14, 5, 5, 2, 2, 25, 17, 2, 25, 17, 25, 25, 25, 24, 24, 23, 8, 8, 5]
+% time elapsed: 20s 745msec
+----------
+%% #27      8.37s best:1006  next:[784,1005] quick_restart (fixed_bools=0/5929)
+%%%mzn-stat: boolVariables=5929
+%%%mzn-stat: failures=408
+%%%mzn-stat: objective=1006
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=10994647
+%%%mzn-stat: solveTime=8.36925
+%%%mzn-stat-end
+Distance totale = 1006
+Suivant = [65, 45, 1, 71, 3, 46, 6, 7, 10, 74, 9, 11, 55, 47, 17, 15, 13, 49, 18, 24, 23, 20, 22, 56, 53, 32, 29, 26, 28, 31, 34, 69, 30, 50, 75, 35, 43, 41, 36, 38, 37, 44, 59, 40, 8, 4, 16, 25, 48, 51, 52, 39, 54, 12, 33, 57, 58, 19, 60, 61, 62, 63, 64, 27, 66, 67, 68, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 4, 4, 4, 4, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 14, 14, 14, 14, 5, 5, 14, 5, 5, 2, 2, 25, 25, 2, 25, 25, 25, 25, 25, 24, 24, 23, 8, 8, 5]
+% time elapsed: 21s 109msec
+----------
+%% #28      8.69s best:999   next:[784,998]  quick_restart (fixed_bools=0/5934)
+%%%mzn-stat: boolVariables=5934
+%%%mzn-stat: failures=429
+%%%mzn-stat: objective=999
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=11049586
+%%%mzn-stat: solveTime=8.6869
+%%%mzn-stat-end
+Distance totale = 999
+Suivant = [65, 45, 1, 71, 3, 46, 6, 7, 10, 74, 9, 11, 55, 47, 17, 15, 13, 48, 18, 24, 23, 49, 22, 56, 53, 32, 29, 26, 28, 31, 34, 69, 30, 50, 75, 35, 43, 41, 36, 38, 37, 44, 59, 40, 8, 4, 16, 25, 20, 51, 52, 39, 54, 12, 33, 57, 58, 19, 60, 61, 62, 63, 64, 27, 66, 67, 68, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 4, 4, 4, 4, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 14, 14, 14, 14, 5, 5, 14, 5, 5, 2, 2, 25, 25, 2, 25, 25, 25, 25, 25, 24, 24, 23, 8, 18, 5]
+% time elapsed: 21s 427msec
+----------
+%% #29      8.80s best:995   next:[784,994]  quick_restart (fixed_bools=0/5938)
+%%%mzn-stat: boolVariables=5938
+%%%mzn-stat: failures=432
+%%%mzn-stat: objective=995
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=11067108
+%%%mzn-stat: solveTime=8.79694
+%%%mzn-stat-end
+Distance totale = 995
+Suivant = [53, 45, 1, 71, 3, 46, 6, 7, 10, 74, 9, 11, 55, 47, 17, 15, 13, 48, 18, 24, 23, 49, 22, 56, 54, 32, 29, 26, 31, 28, 34, 69, 30, 50, 75, 35, 43, 41, 36, 38, 37, 44, 59, 40, 8, 4, 16, 25, 20, 51, 52, 39, 12, 33, 27, 57, 58, 19, 60, 61, 62, 63, 64, 65, 66, 67, 68, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 3, 3, 3, 3, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 4, 5, 4, 5, 4, 5, 4, 4, 5, 2, 2, 25, 25, 2, 25, 25, 25, 25, 25, 24, 24, 23, 8, 18, 5]
+% time elapsed: 21s 537msec
+----------
+%% #30      8.95s best:991   next:[784,990]  quick_restart (fixed_bools=0/5939)
+%%%mzn-stat: boolVariables=5939
+%%%mzn-stat: failures=432
+%%%mzn-stat: objective=991
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=11080240
+%%%mzn-stat: solveTime=8.95212
+%%%mzn-stat-end
+Distance totale = 991
+Suivant = [53, 45, 1, 71, 3, 46, 6, 7, 10, 74, 9, 11, 55, 47, 17, 15, 13, 48, 18, 24, 23, 49, 22, 56, 54, 32, 29, 26, 31, 28, 34, 69, 30, 50, 75, 37, 43, 41, 36, 38, 59, 44, 35, 40, 8, 4, 16, 25, 20, 51, 52, 39, 12, 33, 27, 57, 58, 19, 60, 61, 62, 63, 64, 65, 66, 67, 68, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 3, 3, 3, 3, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 4, 5, 4, 5, 4, 5, 4, 4, 5, 2, 2, 2, 25, 2, 25, 25, 25, 2, 25, 24, 24, 23, 8, 18, 5]
+% time elapsed: 21s 692msec
+----------
+%% #31      9.31s best:990   next:[784,989]  quick_restart (fixed_bools=0/5942)
+%%%mzn-stat: boolVariables=5942
+%%%mzn-stat: failures=471
+%%%mzn-stat: objective=990
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=11180836
+%%%mzn-stat: solveTime=9.31094
+%%%mzn-stat-end
+Distance totale = 990
+Suivant = [53, 45, 1, 71, 3, 46, 6, 7, 10, 74, 9, 11, 55, 47, 17, 15, 13, 48, 18, 24, 23, 49, 22, 56, 54, 32, 29, 26, 31, 28, 34, 69, 30, 50, 75, 37, 35, 41, 36, 38, 43, 44, 59, 40, 8, 4, 16, 25, 20, 51, 52, 39, 12, 33, 27, 57, 58, 19, 60, 61, 62, 63, 64, 65, 66, 67, 68, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 3, 3, 3, 3, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 4, 5, 4, 5, 4, 5, 4, 4, 5, 2, 2, 2, 25, 2, 25, 25, 25, 25, 25, 24, 24, 23, 8, 18, 5]
+% time elapsed: 22s 51msec
+----------
+%% #32      9.51s best:986   next:[784,985]  quick_restart (fixed_bools=0/5942)
+%%%mzn-stat: boolVariables=5942
+%%%mzn-stat: failures=490
+%%%mzn-stat: objective=986
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=11225815
+%%%mzn-stat: solveTime=9.50545
+%%%mzn-stat-end
+Distance totale = 986
+Suivant = [53, 45, 1, 71, 3, 46, 6, 7, 10, 74, 9, 11, 55, 47, 17, 15, 13, 48, 18, 24, 23, 49, 22, 56, 54, 32, 29, 26, 31, 28, 34, 69, 30, 50, 37, 35, 75, 41, 36, 38, 43, 44, 59, 40, 8, 4, 16, 25, 20, 51, 52, 39, 12, 33, 27, 57, 58, 19, 60, 61, 62, 63, 64, 65, 66, 67, 68, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 3, 3, 3, 3, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 4, 5, 4, 5, 4, 5, 4, 4, 5, 2, 2, 2, 25, 2, 25, 25, 25, 25, 25, 24, 24, 23, 8, 18, 5]
+% time elapsed: 22s 245msec
+----------
+%% #33      9.90s best:983   next:[784,982]  rins_lp_lns (d=3.59e-01 s=84 t=0.10 p=0.33 stall=2 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=983
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=9.89791
+%%%mzn-stat-end
+Distance totale = 983
+Suivant = [74, 45, 1, 59, 3, 46, 6, 7, 10, 56, 9, 11, 54, 47, 17, 15, 13, 48, 18, 24, 23, 20, 49, 55, 71, 32, 29, 26, 31, 28, 34, 69, 30, 50, 37, 35, 75, 41, 36, 38, 43, 44, 53, 40, 8, 4, 16, 25, 22, 51, 52, 39, 12, 33, 27, 57, 58, 19, 60, 61, 62, 63, 64, 65, 66, 67, 68, 21, 70, 5, 72, 73, 14, 2, 42]
+Vehicules = [20, 24, 20, 24, 20, 24, 24, 24, 3, 3, 3, 3, 23, 23, 23, 23, 23, 8, 8, 18, 18, 18, 18, 18, 8, 4, 5, 4, 5, 4, 5, 4, 4, 5, 2, 2, 2, 25, 2, 25, 25, 25, 25, 25, 24, 24, 23, 8, 18, 5]
+% time elapsed: 22s 638msec
+----------
+%% #34      9.95s best:979   next:[784,978]  routing_random_lns (d=6.41e-01 s=81 t=0.10 p=0.67 stall=0 h=routing) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=979
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=9.94781
+%%%mzn-stat-end
+Distance totale = 979
+Suivant = [53, 7, 1, 71, 3, 8, 6, 46, 10, 75, 9, 11, 54, 47, 17, 15, 13, 48, 18, 24, 23, 49, 19, 56, 59, 32, 29, 26, 31, 28, 34, 69, 30, 50, 74, 40, 43, 37, 36, 38, 68, 44, 35, 41, 5, 4, 16, 25, 20, 51, 52, 39, 22, 55, 12, 57, 58, 33, 27, 61, 62, 63, 64, 65, 66, 67, 45, 21, 70, 42, 72, 73, 14, 2, 60]
+Vehicules = [17, 24, 17, 24, 17, 24, 24, 24, 5, 5, 5, 5, 23, 23, 23, 23, 23, 18, 18, 3, 18, 3, 18, 3, 18, 8, 9, 8, 9, 8, 9, 8, 8, 9, 2, 2, 2, 2, 2, 2, 20, 20, 2, 20, 17, 24, 23, 18, 3, 9]
+% time elapsed: 22s 688msec
+----------
+%% #35     10.02s best:973   next:[784,972]  graph_var_lns (d=7.34e-01 s=86 t=0.10 p=0.57 stall=0 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=973
+%%%mzn-stat: objectiveBound=784
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=10.0227
+%%%mzn-stat-end
+Distance totale = 973
+Suivant = [56, 7, 1, 54, 3, 8, 6, 46, 10, 75, 9, 11, 51, 47, 17, 15, 13, 48, 18, 24, 23, 49, 19, 71, 59, 32, 29, 26, 31, 28, 34, 53, 30, 50, 74, 38, 35, 40, 36, 43, 68, 44, 37, 41, 5, 4, 16, 25, 20, 60, 52, 39, 22, 55, 12, 57, 58, 33, 27, 61, 62, 63, 64, 65, 66, 67, 45, 21, 70, 42, 72, 73, 14, 2, 69]
+Vehicules = [17, 24, 17, 24, 17, 24, 24, 24, 5, 5, 5, 5, 23, 23, 23, 23, 23, 18, 18, 3, 18, 3, 18, 3, 18, 8, 9, 8, 9, 8, 9, 8, 8, 9, 2, 2, 2, 2, 2, 2, 20, 20, 2, 20, 17, 24, 23, 18, 3, 9]
+% time elapsed: 22s 762msec
+----------
+%% #Bound  10.11s best:973   next:[785,972]  max_lp
+%% #36     10.15s best:972   next:[785,971]  quick_restart (fixed_bools=0/5956)
+%%%mzn-stat: boolVariables=5956
+%%%mzn-stat: failures=554
+%%%mzn-stat: objective=972
+%%%mzn-stat: objectiveBound=785
+%%%mzn-stat: propagations=11361404
+%%%mzn-stat: solveTime=10.1468
+%%%mzn-stat-end
+Distance totale = 972
+Suivant = [56, 7, 1, 54, 3, 8, 6, 46, 10, 75, 9, 11, 51, 47, 17, 15, 13, 48, 18, 24, 23, 49, 19, 69, 59, 32, 29, 26, 31, 28, 34, 53, 30, 50, 68, 38, 35, 41, 36, 43, 74, 44, 37, 40, 5, 4, 16, 25, 20, 60, 52, 42, 39, 55, 12, 57, 58, 33, 27, 61, 62, 63, 64, 65, 66, 67, 45, 21, 70, 71, 72, 73, 14, 2, 22]
+Vehicules = [17, 24, 17, 24, 17, 24, 24, 24, 5, 5, 5, 5, 23, 23, 23, 23, 23, 18, 18, 25, 18, 25, 18, 25, 18, 8, 9, 8, 9, 8, 9, 8, 8, 9, 2, 3, 2, 3, 3, 2, 3, 2, 2, 2, 17, 24, 23, 18, 25, 9]
+% time elapsed: 22s 887msec
+----------
+%% #Bound  10.39s best:972   next:[792,971]  max_lp
+%% #Bound  10.60s best:972   next:[793,971]  max_lp
+%% #37     11.00s best:971   next:[793,970]  quick_restart (fixed_bools=0/5962)
+%%%mzn-stat: boolVariables=5962
+%%%mzn-stat: failures=660
+%%%mzn-stat: objective=971
+%%%mzn-stat: objectiveBound=793
+%%%mzn-stat: propagations=11551063
+%%%mzn-stat: solveTime=10.9961
+%%%mzn-stat-end
+Distance totale = 971
+Suivant = [56, 7, 1, 54, 3, 8, 6, 46, 10, 75, 9, 11, 51, 47, 17, 15, 13, 48, 18, 24, 19, 49, 21, 74, 68, 32, 29, 26, 31, 28, 34, 53, 30, 50, 64, 38, 35, 41, 36, 43, 69, 44, 37, 40, 5, 4, 16, 25, 20, 60, 52, 42, 22, 55, 12, 57, 58, 59, 27, 61, 62, 63, 23, 65, 66, 67, 45, 33, 70, 71, 72, 73, 14, 2, 39]
+Vehicules = [17, 24, 17, 24, 17, 24, 24, 24, 5, 5, 5, 5, 23, 23, 23, 23, 23, 13, 13, 3, 13, 3, 13, 3, 13, 18, 9, 18, 9, 18, 9, 18, 18, 9, 2, 25, 2, 25, 25, 2, 25, 2, 2, 2, 17, 24, 23, 13, 3, 9]
+% time elapsed: 23s 736msec
+----------
+%% #38     11.33s best:967   next:[793,966]  quick_restart (fixed_bools=0/5962)
+%%%mzn-stat: boolVariables=5962
+%%%mzn-stat: failures=692
+%%%mzn-stat: objective=967
+%%%mzn-stat: objectiveBound=793
+%%%mzn-stat: propagations=11623031
+%%%mzn-stat: solveTime=11.3252
+%%%mzn-stat-end
+Distance totale = 967
+Suivant = [56, 7, 1, 54, 3, 8, 6, 46, 10, 75, 9, 11, 51, 47, 17, 15, 13, 48, 18, 24, 19, 49, 21, 74, 68, 32, 29, 26, 31, 28, 34, 53, 30, 50, 64, 40, 35, 41, 36, 38, 69, 44, 37, 43, 5, 4, 16, 25, 20, 60, 52, 42, 22, 55, 12, 57, 58, 59, 27, 61, 62, 63, 23, 65, 66, 67, 45, 33, 70, 71, 72, 73, 14, 2, 39]
+Vehicules = [17, 24, 17, 24, 17, 24, 24, 24, 5, 5, 5, 5, 23, 23, 23, 23, 23, 13, 13, 3, 13, 3, 13, 3, 13, 18, 9, 18, 9, 18, 9, 18, 18, 9, 2, 25, 2, 25, 25, 25, 25, 2, 2, 2, 17, 24, 23, 13, 3, 9]
+% time elapsed: 24s 65msec
+----------
+%% #Bound  12.60s best:967   next:[794,966]  max_lp
+%% #39     14.36s best:966   next:[794,965]  routing_random_lns (d=4.81e-01 s=121 t=0.10 p=0.50 stall=0 h=routing) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=966
+%%%mzn-stat: objectiveBound=794
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=14.3558
+%%%mzn-stat-end
+Distance totale = 966
+Suivant = [56, 7, 1, 68, 45, 8, 6, 3, 10, 17, 9, 11, 51, 47, 46, 15, 13, 48, 18, 24, 19, 49, 21, 74, 69, 32, 29, 26, 31, 28, 34, 53, 30, 50, 64, 40, 35, 41, 36, 38, 60, 44, 37, 43, 2, 4, 16, 25, 20, 57, 52, 42, 22, 55, 12, 27, 58, 59, 39, 61, 62, 63, 23, 65, 66, 67, 5, 33, 70, 71, 72, 73, 14, 75, 54]
+Vehicules = [17, 17, 17, 23, 17, 17, 17, 17, 5, 5, 5, 5, 5, 23, 23, 23, 5, 13, 13, 3, 13, 3, 13, 3, 13, 18, 6, 18, 6, 18, 6, 18, 18, 6, 2, 9, 2, 9, 9, 9, 9, 2, 2, 2, 17, 23, 23, 13, 3, 6]
+% time elapsed: 27s 96msec
+----------
+%% #40     15.79s best:964   next:[794,963]  rnd_cst_lns (d=6.91e-01 s=132 t=0.10 p=0.56 stall=7 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=964
+%%%mzn-stat: objectiveBound=794
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=15.7881
+%%%mzn-stat-end
+Distance totale = 964
+Suivant = [56, 7, 1, 68, 45, 8, 6, 3, 10, 13, 9, 11, 17, 47, 46, 15, 64, 48, 18, 24, 19, 49, 21, 74, 69, 32, 29, 26, 31, 28, 34, 51, 30, 50, 53, 40, 35, 41, 36, 38, 60, 44, 37, 43, 2, 4, 16, 25, 20, 57, 52, 42, 22, 55, 12, 27, 58, 59, 39, 61, 62, 63, 23, 65, 66, 67, 5, 33, 70, 71, 72, 73, 14, 75, 54]
+Vehicules = [17, 17, 17, 23, 17, 17, 17, 17, 5, 5, 5, 5, 5, 23, 23, 23, 5, 13, 13, 3, 13, 3, 13, 3, 13, 18, 6, 18, 6, 18, 6, 18, 18, 6, 2, 9, 2, 9, 9, 9, 9, 2, 2, 2, 17, 23, 23, 13, 3, 6]
+% time elapsed: 28s 528msec
+----------
+%% #41     16.53s best:962   next:[794,961]  routing_random_lns (d=6.31e-01 s=135 t=0.10 p=0.60 stall=0 h=routing) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=962
+%%%mzn-stat: objectiveBound=794
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=16.5317
+%%%mzn-stat-end
+Distance totale = 962
+Suivant = [56, 7, 1, 68, 45, 46, 8, 3, 10, 13, 6, 11, 17, 47, 9, 15, 64, 48, 18, 24, 19, 49, 21, 71, 69, 32, 29, 26, 31, 28, 34, 51, 30, 50, 53, 40, 35, 41, 36, 38, 54, 44, 37, 43, 2, 4, 16, 25, 20, 57, 52, 42, 23, 55, 22, 12, 58, 59, 39, 61, 62, 63, 14, 65, 66, 67, 5, 33, 70, 27, 72, 73, 74, 75, 60]
+Vehicules = [17, 17, 17, 6, 17, 6, 17, 17, 13, 13, 6, 6, 13, 13, 13, 13, 13, 3, 3, 5, 3, 5, 3, 5, 3, 18, 20, 18, 20, 18, 20, 18, 18, 20, 2, 9, 2, 9, 9, 9, 9, 2, 2, 2, 17, 6, 13, 3, 5, 20]
+% time elapsed: 29s 272msec
+----------
+%% #42     16.74s best:960   next:[794,959]  quick_restart (fixed_bools=0/6021)
+%%%mzn-stat: boolVariables=6021
+%%%mzn-stat: failures=1351
+%%%mzn-stat: objective=960
+%%%mzn-stat: objectiveBound=794
+%%%mzn-stat: propagations=12843225
+%%%mzn-stat: solveTime=16.7416
+%%%mzn-stat-end
+Distance totale = 960
+Suivant = [56, 7, 1, 68, 45, 46, 8, 3, 10, 13, 12, 6, 17, 47, 9, 15, 64, 48, 18, 24, 19, 49, 21, 71, 69, 32, 29, 26, 31, 28, 34, 51, 30, 50, 53, 40, 35, 41, 36, 38, 54, 44, 37, 43, 2, 4, 16, 25, 20, 57, 52, 42, 23, 55, 22, 11, 58, 59, 39, 61, 62, 63, 14, 65, 66, 67, 5, 33, 70, 27, 72, 73, 74, 75, 60]
+Vehicules = [17, 17, 17, 6, 17, 6, 17, 17, 13, 13, 6, 6, 13, 13, 13, 13, 13, 3, 3, 5, 3, 5, 3, 5, 3, 18, 20, 18, 20, 18, 20, 18, 18, 20, 2, 9, 2, 9, 9, 9, 9, 2, 2, 2, 17, 6, 13, 3, 5, 20]
+% time elapsed: 29s 481msec
+----------
+%% #43     18.19s best:958   next:[794,957]  quick_restart (fixed_bools=0/6034)
+%%%mzn-stat: boolVariables=6034
+%%%mzn-stat: failures=1505
+%%%mzn-stat: objective=958
+%%%mzn-stat: objectiveBound=794
+%%%mzn-stat: propagations=13221163
+%%%mzn-stat: solveTime=18.1908
+%%%mzn-stat-end
+Distance totale = 958
+Suivant = [56, 7, 1, 68, 45, 4, 8, 46, 10, 13, 12, 6, 17, 47, 9, 15, 64, 48, 18, 24, 19, 49, 21, 71, 69, 32, 29, 26, 31, 28, 34, 51, 30, 50, 53, 40, 35, 41, 36, 38, 54, 44, 37, 43, 2, 3, 16, 25, 20, 57, 52, 42, 23, 55, 22, 11, 58, 59, 39, 61, 62, 63, 14, 65, 66, 67, 5, 33, 70, 27, 72, 73, 74, 75, 60]
+Vehicules = [17, 17, 17, 6, 17, 6, 17, 17, 13, 13, 6, 6, 13, 13, 13, 13, 13, 3, 3, 5, 3, 5, 3, 5, 3, 18, 20, 18, 20, 18, 20, 18, 18, 20, 2, 9, 2, 9, 9, 9, 9, 2, 2, 2, 17, 17, 13, 3, 5, 20]
+% time elapsed: 30s 931msec
+----------
+%% #44     20.71s best:955   next:[794,954]  graph_dec_lns (d=7.75e-01 s=182 t=0.10 p=0.58 stall=5 h=base) (fixed_bools=0/5724)
+%%%mzn-stat: boolVariables=5724
+%%%mzn-stat: failures=50
+%%%mzn-stat: objective=955
+%%%mzn-stat: objectiveBound=794
+%%%mzn-stat: propagations=1421507
+%%%mzn-stat: solveTime=20.7108
+%%%mzn-stat-end
+Distance totale = 955
+Suivant = [4, 7, 1, 68, 45, 64, 8, 46, 10, 13, 12, 6, 17, 47, 9, 15, 57, 48, 18, 24, 19, 49, 21, 71, 69, 32, 29, 26, 31, 28, 34, 51, 30, 50, 53, 40, 35, 41, 36, 38, 56, 44, 37, 43, 2, 3, 16, 25, 20, 54, 52, 42, 23, 55, 22, 11, 58, 59, 39, 61, 62, 63, 14, 65, 66, 67, 5, 33, 70, 27, 72, 73, 74, 75, 60]
+Vehicules = [17, 17, 17, 17, 17, 6, 17, 17, 13, 13, 6, 6, 13, 13, 13, 13, 13, 3, 3, 5, 3, 5, 3, 5, 3, 18, 20, 18, 20, 18, 20, 18, 18, 20, 2, 9, 2, 9, 9, 9, 9, 2, 2, 2, 17, 17, 13, 3, 5, 20]
+% time elapsed: 33s 450msec
+----------
+%% #Model  49.16s var:4682/4683 constraints:5226/5228
+%% #Bound  51.28s best:955   next:[797,954]  max_lp
+%% #Model  51.55s var:4680/4683 constraints:5222/5228
+%% #Bound  51.98s best:955   next:[798,954]  max_lp
+%% #Model  52.04s var:4678/4683 constraints:5218/5228
+%% #Bound  56.54s best:955   next:[800,954]  max_lp
+%% #Model  56.64s var:4677/4683 constraints:5216/5228
+%% #Bound  57.07s best:955   next:[802,954]  max_lp
+%% #Model  57.09s var:4675/4683 constraints:5213/5228
+%% #Bound  64.06s best:955   next:[803,954]  max_lp
+%% #Model  64.11s var:4674/4683 constraints:5211/5228
+%% #Bound  64.67s best:955   next:[804,954]  max_lp
+%% #Model  64.69s var:4672/4683 constraints:5207/5228
+%% #Bound  70.12s best:955   next:[805,954]  max_lp
+%% #Model  70.31s var:4671/4683 constraints:5205/5228
+%% #Model  80.85s var:4669/4683 constraints:5201/5228
+%% #Bound  83.34s best:955   next:[806,954]  max_lp
+%% #Bound  84.20s best:955   next:[807,954]  max_lp
+%% #Bound  84.58s best:955   next:[808,954]  max_lp
+%% #Model  84.64s var:4668/4683 constraints:5199/5228
+%% #Model 113.89s var:4667/4683 constraints:5197/5228
+%% #Bound 205.39s best:955   next:[809,954]  max_lp
+%% #Model 205.48s var:4663/4683 constraints:5189/5228
+%% #Model 214.72s var:4658/4683 constraints:5179/5228
+%% #Model 222.26s var:4657/4683 constraints:5177/5228
+%% #Bound 225.07s best:955   next:[812,954]  max_lp
+%% #Model 225.51s var:4656/4683 constraints:5175/5228
+%% #Bound 225.67s best:955   next:[813,954]  max_lp
+%% #Bound 226.06s best:955   next:[814,954]  max_lp
+%% #Model 226.08s var:4655/4683 constraints:5173/5228
+%% #Bound 235.39s best:955   next:[815,954]  max_lp
+%% #Bound 245.53s best:955   next:[816,954]  max_lp
+%% #Bound 253.28s best:955   next:[817,954]  max_lp
+%% #45    297.98s best:953   next:[817,952]  max_lp (fixed_bools=28/5853)
+%%%mzn-stat: boolVariables=5853
+%%%mzn-stat: failures=3735
+%%%mzn-stat: objective=953
+%%%mzn-stat: objectiveBound=817
+%%%mzn-stat: propagations=159085507
+%%%mzn-stat: solveTime=297.981
+%%%mzn-stat-end
+Distance totale = 953
+Suivant = [61, 7, 1, 62, 45, 8, 6, 46, 10, 13, 22, 15, 17, 47, 16, 9, 60, 49, 21, 24, 18, 20, 19, 53, 56, 32, 29, 26, 31, 28, 34, 58, 30, 50, 55, 38, 35, 41, 36, 43, 40, 44, 37, 3, 2, 4, 12, 25, 48, 51, 52, 23, 5, 39, 27, 57, 33, 59, 42, 11, 14, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 54]
+Vehicules = [9, 3, 9, 3, 3, 3, 3, 3, 11, 11, 10, 11, 11, 11, 11, 11, 11, 2, 2, 10, 2, 10, 2, 10, 2, 7, 5, 7, 5, 7, 5, 7, 7, 5, 4, 4, 4, 4, 4, 4, 4, 9, 4, 9, 3, 3, 11, 2, 2, 5]
+% time elapsed: 5m 10s
+----------
+%% #46    298.44s best:946   next:[817,945]  quick_restart (fixed_bools=28/6343)
+%%%mzn-stat: boolVariables=6343
+%%%mzn-stat: failures=25359
+%%%mzn-stat: objective=946
+%%%mzn-stat: objectiveBound=817
+%%%mzn-stat: propagations=187122165
+%%%mzn-stat: solveTime=298.444
+%%%mzn-stat-end
+Distance totale = 946
+Suivant = [61, 7, 1, 62, 45, 8, 6, 46, 10, 13, 22, 15, 17, 47, 16, 9, 60, 48, 21, 24, 18, 49, 19, 53, 56, 32, 29, 26, 31, 28, 34, 58, 30, 50, 55, 38, 35, 41, 36, 43, 40, 44, 37, 3, 2, 4, 12, 25, 20, 51, 52, 23, 5, 39, 27, 57, 33, 59, 42, 11, 14, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 54]
+Vehicules = [9, 3, 9, 3, 3, 3, 3, 3, 11, 11, 10, 11, 11, 11, 11, 11, 11, 2, 2, 10, 2, 10, 2, 10, 2, 7, 5, 7, 5, 7, 5, 7, 7, 5, 4, 4, 4, 4, 4, 4, 4, 9, 4, 9, 3, 3, 11, 2, 10, 5]
+% time elapsed: 5m 11s
+----------
+%% #47    298.83s best:943   next:[817,942]  quick_restart (fixed_bools=28/6343)
+%%%mzn-stat: boolVariables=6343
+%%%mzn-stat: failures=25388
+%%%mzn-stat: objective=943
+%%%mzn-stat: objectiveBound=817
+%%%mzn-stat: propagations=187196040
+%%%mzn-stat: solveTime=298.828
+%%%mzn-stat-end
+Distance totale = 943
+Suivant = [61, 7, 1, 62, 45, 8, 6, 46, 10, 13, 22, 15, 17, 47, 16, 9, 60, 48, 18, 24, 19, 49, 21, 53, 56, 32, 29, 26, 31, 28, 34, 58, 30, 50, 55, 38, 35, 41, 36, 43, 40, 44, 37, 3, 2, 4, 12, 25, 20, 51, 52, 23, 5, 39, 27, 57, 33, 59, 42, 11, 14, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 54]
+Vehicules = [9, 3, 9, 3, 3, 3, 3, 3, 11, 11, 10, 11, 11, 11, 11, 11, 11, 2, 2, 10, 2, 10, 2, 10, 2, 7, 5, 7, 5, 7, 5, 7, 7, 5, 4, 4, 4, 4, 4, 4, 4, 9, 4, 9, 3, 3, 11, 2, 10, 5]
+% time elapsed: 5m 11s
+----------
+%% #Model 299.43s var:4653/4683 constraints:5169/5228
+%% #48    302.08s best:942   next:[817,941]  quick_restart (fixed_bools=30/6350)
+%%%mzn-stat: boolVariables=6350
+%%%mzn-stat: failures=25694
+%%%mzn-stat: objective=942
+%%%mzn-stat: objectiveBound=817
+%%%mzn-stat: propagations=187785069
+%%%mzn-stat: solveTime=302.079
+%%%mzn-stat-end
+Distance totale = 942
+Suivant = [56, 7, 1, 61, 45, 8, 6, 46, 10, 13, 22, 9, 17, 47, 16, 12, 55, 48, 18, 24, 19, 49, 21, 58, 54, 32, 29, 26, 31, 28, 34, 53, 30, 50, 62, 38, 35, 41, 36, 43, 40, 44, 37, 3, 2, 4, 15, 25, 20, 51, 52, 23, 5, 39, 27, 57, 33, 59, 42, 11, 14, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 60]
+Vehicules = [9, 3, 9, 3, 3, 3, 3, 3, 11, 11, 10, 11, 11, 11, 11, 11, 11, 2, 2, 10, 2, 10, 2, 10, 2, 7, 5, 7, 5, 7, 5, 7, 7, 5, 4, 4, 4, 4, 4, 4, 4, 9, 4, 9, 3, 3, 11, 2, 10, 5]
+% time elapsed: 5m 14s
+----------
+%% #Model 350.27s var:4649/4683 constraints:5161/5228
+%% #Model 367.78s var:4644/4683 constraints:5150/5228
+%% #Model 371.99s var:4640/4683 constraints:5142/5228
+%% #Bound 382.99s best:942   next:[818,941]  max_lp
+%% #Model 383.04s var:4639/4683 constraints:5140/5228
+%% #Model 425.09s var:4637/4683 constraints:5136/5228
+%% #Bound 444.28s best:942   next:[820,941]  max_lp
+%% #Bound 569.68s best:942   next:[823,941]  max_lp
+%% #Model 570.18s var:4636/4683 constraints:5134/5228
+%% #Bound 581.50s best:942   next:[824,941]  max_lp
+%% #Bound 582.76s best:942   next:[825,941]  max_lp
+%% #Bound 583.30s best:942   next:[826,941]  max_lp
+%% #Model 583.32s var:4635/4683 constraints:5132/5228
+%% #Bound 594.98s best:942   next:[827,941]  max_lp
+%% #Bound 596.08s best:942   next:[828,941]  max_lp
+%% #Bound 596.79s best:942   next:[832,941]  max_lp
+%% #Model 596.84s var:4633/4683 constraints:5130/5228
+%% #Model 762.39s var:4632/4683 constraints:5129/5228
+%% #Model 763.12s var:4625/4683 constraints:5117/5228
+%% #Model 897.47s var:4624/4683 constraints:5115/5228
+%% #Bound 900.87s best:942   next:[839,941]  max_lp
+%% #Model 900.89s var:4623/4683 constraints:5113/5228
+%% #Bound 901.41s best:942   next:[842,941]  max_lp
+%% #Bound 903.61s best:942   next:[843,941]  max_lp
+%% #Model 903.69s var:4618/4683 constraints:5105/5228
+%% #Bound 907.11s best:942   next:[844,941]  max_lp
+%% #Bound 908.13s best:942   next:[847,941]  max_lp
+%% #Model 908.18s var:4614/4683 constraints:5098/5228
+%% #Model 1227.92s var:4611/4683 constraints:5093/5228
+%% #Model 1275.31s var:4607/4683 constraints:5085/5228
+%% #Model 1325.31s var:4606/4683 constraints:5083/5228
+%% #Model 1403.40s var:4604/4683 constraints:5080/5228
+Stopped.
+Finished in 24m 27s.

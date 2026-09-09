@@ -1,0 +1,214 @@
+
+￼
+Running vrptw_cp.mzn, R101_25.dzn
+10m 6s
+
+Using FZN solver C:\Program Files\MiniZinc\bin\fzn-chuffed.EXE for solving, parameters: -a -s -v 
+Distance totale = 807
+Suivant = [27, 21, 25, 28, 18, 4, 8, 17, 13, 33, 19, 9, 30, 15, 22, 1, 29, 20, 10, 32, 6, 24, 3, 31, 26, 14, 2, 5, 11, 23, 7, 12, 16]
+Vehicules = [8, 2, 5, 2, 3, 2, 6, 6, 7, 4, 4, 7, 7, 1, 1, 8, 6, 3, 4, 3, 2, 1, 5, 1, 5]
+% time elapsed: 1s 914msec
+----------
+Distance totale = 742
+Suivant = [32, 21, 24, 25, 18, 4, 8, 27, 3, 30, 19, 9, 28, 16, 22, 10, 31, 6, 20, 1, 13, 29, 17, 33, 26, 23, 11, 7, 12, 2, 15, 5, 14]
+Vehicules = [2, 5, 4, 7, 7, 7, 3, 3, 4, 8, 2, 4, 5, 8, 6, 8, 1, 7, 2, 2, 5, 6, 1, 4, 7]
+% time elapsed: 1s 931msec
+----------
+Distance totale = 741
+Suivant = [28, 21, 24, 27, 18, 30, 8, 1, 17, 32, 19, 9, 33, 16, 3, 6, 31, 20, 10, 26, 13, 4, 22, 25, 29, 14, 11, 5, 23, 2, 15, 7, 12]
+Vehicules = [7, 5, 6, 4, 3, 1, 7, 7, 8, 2, 2, 8, 5, 1, 6, 1, 8, 3, 2, 3, 5, 4, 4, 6, 6]
+% time elapsed: 5s 960msec
+----------
+Distance totale = 730
+Suivant = [32, 21, 24, 29, 18, 28, 8, 30, 17, 1, 19, 9, 27, 15, 3, 6, 31, 20, 10, 26, 13, 4, 22, 25, 33, 14, 11, 5, 7, 2, 23, 16, 12]
+Vehicules = [2, 5, 1, 6, 3, 7, 4, 4, 8, 2, 2, 8, 5, 1, 1, 7, 8, 3, 2, 3, 5, 6, 6, 1, 1]
+% time elapsed: 5s 979msec
+----------
+% Pruned 49999 learnt clauses
+% Pruned 50000 learnt clauses
+Distance totale = 728
+Suivant = [32, 21, 24, 33, 18, 29, 8, 28, 17, 1, 19, 9, 27, 16, 3, 6, 26, 10, 20, 31, 13, 4, 22, 25, 30, 23, 7, 11, 15, 12, 5, 14, 2]
+Vehicules = [6, 8, 4, 1, 6, 7, 2, 2, 5, 6, 3, 5, 8, 7, 4, 7, 5, 6, 3, 3, 8, 1, 1, 4, 4]
+% time elapsed: 30s 771msec
+----------
+Distance totale = 726
+Suivant = [29, 21, 24, 32, 18, 28, 8, 26, 17, 1, 19, 9, 27, 16, 3, 6, 33, 20, 10, 31, 13, 4, 22, 25, 30, 23, 7, 11, 5, 12, 15, 14, 2]
+Vehicules = [3, 8, 6, 1, 4, 7, 2, 2, 5, 3, 3, 5, 8, 7, 6, 7, 5, 4, 3, 4, 8, 1, 1, 6, 6]
+% time elapsed: 30s 802msec
+----------
+Distance totale = 705
+Suivant = [31, 21, 24, 32, 16, 17, 8, 29, 10, 28, 19, 9, 27, 15, 3, 6, 33, 1, 20, 30, 13, 4, 22, 25, 26, 23, 7, 18, 11, 12, 14, 5, 2]
+Vehicules = [3, 8, 6, 1, 7, 7, 2, 2, 5, 5, 4, 5, 8, 6, 6, 7, 7, 3, 4, 4, 8, 1, 1, 6, 6]
+% time elapsed: 30s 811msec
+----------
+Distance totale = 703
+Suivant = [27, 18, 24, 31, 16, 30, 8, 17, 10, 26, 19, 9, 33, 15, 3, 6, 28, 1, 20, 32, 13, 4, 22, 25, 29, 2, 7, 11, 21, 12, 5, 14, 23]
+Vehicules = [1, 1, 7, 8, 6, 6, 2, 2, 5, 5, 3, 5, 4, 7, 7, 6, 2, 1, 3, 3, 4, 8, 8, 7, 7]
+% time elapsed: 30s 958msec
+----------
+Distance totale = 702
+Suivant = [30, 16, 1, 25, 18, 32, 8, 17, 10, 26, 19, 9, 29, 15, 3, 13, 33, 6, 20, 27, 24, 4, 22, 28, 31, 2, 7, 11, 21, 12, 5, 14, 23]
+Vehicules = [7, 1, 7, 8, 6, 6, 2, 2, 5, 5, 3, 5, 1, 7, 7, 1, 2, 6, 3, 3, 4, 8, 8, 4, 8]
+% time elapsed: 30s 962msec
+----------
+Distance totale = 701
+Suivant = [32, 16, 24, 25, 18, 30, 8, 1, 10, 28, 19, 9, 27, 15, 3, 17, 33, 6, 20, 29, 4, 13, 22, 26, 31, 21, 7, 11, 2, 12, 5, 14, 23]
+Vehicules = [2, 4, 7, 1, 6, 6, 2, 2, 5, 5, 3, 5, 8, 7, 7, 4, 4, 6, 3, 3, 1, 8, 8, 7, 1]
+% time elapsed: 30s 971msec
+----------
+Distance totale = 700
+Suivant = [30, 16, 24, 25, 18, 29, 8, 1, 10, 28, 19, 9, 32, 15, 3, 17, 26, 6, 20, 31, 13, 4, 22, 33, 27, 21, 7, 11, 2, 12, 5, 14, 23]
+Vehicules = [2, 4, 7, 8, 6, 6, 2, 2, 5, 5, 3, 5, 1, 7, 7, 4, 4, 6, 3, 3, 1, 8, 8, 7, 8]
+% time elapsed: 30s 973msec
+----------
+Distance totale = 698
+Suivant = [30, 16, 24, 29, 18, 13, 8, 1, 10, 32, 19, 9, 33, 15, 3, 17, 27, 6, 20, 31, 26, 4, 22, 25, 28, 2, 7, 11, 21, 12, 5, 14, 23]
+Vehicules = [2, 1, 7, 8, 6, 6, 2, 2, 5, 5, 3, 5, 6, 7, 7, 1, 1, 6, 3, 3, 4, 8, 8, 7, 7]
+% time elapsed: 30s 985msec
+----------
+Distance totale = 695
+Suivant = [31, 21, 1, 25, 18, 33, 8, 17, 24, 29, 19, 9, 27, 16, 3, 6, 28, 10, 20, 32, 13, 4, 22, 26, 30, 5, 15, 11, 2, 12, 7, 14, 23]
+Vehicules = [2, 4, 2, 8, 1, 7, 6, 6, 5, 1, 3, 5, 4, 7, 2, 7, 6, 1, 3, 3, 4, 8, 8, 5, 8]
+% time elapsed: 31s 2msec
+----------
+Distance totale = 694
+Suivant = [33, 21, 1, 25, 18, 32, 8, 17, 10, 31, 19, 9, 26, 16, 3, 13, 27, 6, 20, 30, 24, 4, 22, 29, 28, 2, 15, 11, 7, 12, 5, 14, 23]
+Vehicules = [2, 1, 2, 8, 6, 6, 4, 4, 5, 5, 3, 5, 7, 7, 2, 7, 4, 6, 3, 3, 1, 8, 8, 1, 8]
+% time elapsed: 31s 10msec
+----------
+Distance totale = 692
+Suivant = [32, 21, 1, 25, 18, 28, 8, 17, 3, 30, 19, 9, 33, 16, 10, 13, 26, 6, 20, 27, 24, 4, 22, 31, 29, 2, 15, 11, 7, 12, 5, 14, 23]
+Vehicules = [5, 1, 5, 8, 6, 6, 4, 4, 5, 2, 3, 5, 7, 7, 2, 7, 4, 6, 3, 3, 1, 8, 8, 1, 8]
+% time elapsed: 31s 15msec
+----------
+Distance totale = 691
+Suivant = [26, 21, 1, 25, 7, 13, 8, 17, 20, 31, 19, 9, 27, 16, 3, 6, 32, 10, 30, 33, 24, 4, 22, 28, 29, 2, 15, 11, 18, 12, 5, 14, 23]
+Vehicules = [2, 1, 2, 8, 6, 7, 6, 6, 5, 4, 3, 5, 7, 7, 2, 7, 6, 4, 3, 5, 1, 8, 8, 1, 8]
+% time elapsed: 31s 103msec
+----------
+Distance totale = 683
+Suivant = [33, 21, 1, 25, 16, 32, 8, 17, 3, 30, 19, 9, 29, 15, 10, 13, 28, 6, 20, 27, 24, 4, 22, 31, 26, 18, 7, 5, 23, 11, 14, 12, 2]
+Vehicules = [7, 8, 7, 4, 3, 1, 2, 2, 7, 6, 5, 7, 3, 6, 6, 3, 2, 1, 5, 5, 8, 4, 4, 8, 4]
+% time elapsed: 31s 113msec
+----------
+% Pruned 50000 learnt clauses
+% Pruned 49996 learnt clauses
+Distance totale = 682
+Suivant = [32, 18, 26, 33, 7, 30, 8, 17, 3, 29, 19, 9, 31, 15, 13, 6, 27, 20, 10, 1, 24, 4, 22, 25, 28, 16, 12, 5, 23, 14, 11, 21, 2]
+Vehicules = [8, 8, 2, 4, 3, 1, 3, 3, 2, 6, 6, 2, 5, 5, 5, 1, 3, 8, 6, 8, 7, 4, 4, 7, 7]
+% time elapsed: 48s 532msec
+----------
+Distance totale = 681
+Suivant = [31, 18, 32, 28, 7, 13, 8, 17, 20, 29, 19, 9, 26, 15, 22, 27, 30, 6, 10, 1, 3, 24, 4, 25, 33, 16, 12, 5, 23, 14, 11, 2, 21]
+Vehicules = [2, 7, 8, 4, 3, 7, 3, 3, 2, 6, 6, 2, 7, 5, 5, 1, 3, 7, 6, 2, 8, 5, 4, 5, 5]
+% time elapsed: 48s 555msec
+----------
+Distance totale = 677
+Suivant = [31, 18, 32, 28, 7, 26, 8, 17, 20, 29, 19, 9, 27, 15, 22, 13, 30, 6, 10, 1, 3, 24, 4, 25, 33, 16, 12, 5, 23, 14, 11, 2, 21]
+Vehicules = [2, 7, 8, 4, 3, 7, 3, 3, 2, 6, 6, 2, 1, 5, 5, 1, 3, 7, 6, 2, 8, 5, 4, 5, 5]
+% time elapsed: 48s 558msec
+----------
+Distance totale = 675
+Suivant = [31, 18, 26, 28, 7, 13, 8, 17, 20, 32, 19, 9, 27, 15, 22, 6, 30, 29, 10, 1, 3, 24, 4, 25, 33, 16, 12, 5, 23, 14, 11, 2, 21]
+Vehicules = [2, 7, 8, 4, 3, 1, 3, 3, 2, 6, 6, 2, 1, 5, 5, 1, 3, 7, 6, 2, 8, 5, 4, 5, 5]
+% time elapsed: 48s 562msec
+----------
+Distance totale = 674
+Suivant = [33, 18, 26, 32, 7, 13, 8, 17, 20, 27, 19, 9, 31, 15, 22, 6, 30, 29, 10, 1, 3, 4, 24, 25, 28, 16, 12, 5, 23, 14, 11, 21, 2]
+Vehicules = [2, 8, 7, 5, 3, 1, 3, 3, 2, 6, 6, 2, 1, 5, 5, 1, 3, 8, 6, 2, 7, 5, 4, 4, 4]
+% time elapsed: 48s 567msec
+----------
+Distance totale = 659
+Suivant = [31, 18, 24, 27, 7, 13, 8, 17, 20, 28, 19, 9, 29, 15, 26, 6, 33, 32, 10, 1, 3, 4, 22, 25, 30, 16, 12, 5, 23, 14, 11, 21, 2]
+Vehicules = [2, 8, 7, 4, 3, 1, 3, 3, 2, 6, 6, 2, 1, 5, 5, 1, 3, 8, 6, 2, 7, 4, 4, 7, 7]
+% time elapsed: 48s 575msec
+----------
+Distance totale = 653
+Suivant = [29, 18, 24, 28, 7, 30, 8, 17, 20, 26, 19, 9, 27, 15, 13, 6, 33, 32, 10, 1, 3, 4, 22, 25, 31, 16, 12, 5, 23, 14, 11, 21, 2]
+Vehicules = [2, 8, 7, 4, 3, 1, 3, 3, 2, 6, 6, 2, 5, 5, 5, 1, 3, 8, 6, 2, 7, 4, 4, 7, 7]
+% time elapsed: 48s 579msec
+----------
+Distance totale = 649
+Suivant = [31, 18, 24, 30, 7, 33, 8, 17, 20, 26, 19, 9, 28, 16, 13, 6, 29, 32, 10, 1, 3, 4, 22, 25, 27, 15, 12, 5, 23, 14, 11, 21, 2]
+Vehicules = [2, 8, 7, 4, 3, 5, 3, 3, 2, 6, 6, 2, 1, 5, 1, 5, 3, 8, 6, 2, 7, 4, 4, 7, 7]
+% time elapsed: 48s 588msec
+----------
+Distance totale = 647
+Suivant = [30, 18, 24, 29, 16, 13, 8, 17, 20, 26, 19, 9, 28, 15, 6, 32, 31, 33, 10, 1, 3, 4, 22, 25, 27, 23, 12, 7, 5, 14, 11, 2, 21]
+Vehicules = [2, 7, 8, 1, 4, 5, 3, 3, 2, 6, 6, 2, 5, 5, 5, 4, 3, 7, 6, 2, 8, 1, 1, 8, 8]
+% time elapsed: 49s 263msec
+----------
+Distance totale = 642
+Suivant = [31, 18, 24, 29, 16, 33, 8, 17, 20, 28, 19, 9, 32, 15, 22, 6, 26, 27, 10, 1, 3, 13, 4, 25, 30, 2, 12, 21, 5, 14, 11, 23, 7]
+Vehicules = [2, 1, 3, 7, 4, 4, 8, 8, 2, 6, 6, 2, 5, 5, 5, 4, 8, 1, 6, 2, 3, 5, 7, 3, 3]
+% time elapsed: 49s 296msec
+----------
+Distance totale = 635
+Suivant = [31, 18, 24, 27, 16, 33, 8, 17, 20, 28, 19, 9, 29, 15, 13, 6, 32, 30, 10, 1, 3, 4, 22, 25, 26, 2, 5, 21, 23, 14, 11, 12, 7]
+Vehicules = [7, 1, 3, 4, 2, 2, 8, 8, 7, 6, 6, 7, 5, 5, 5, 2, 8, 1, 6, 7, 3, 4, 4, 3, 3]
+% time elapsed: 49s 301msec
+----------
+Stopped.
+*** INTERRUPTED ***
+% Pruned 50000 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49999 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49988 learnt clauses
+% Pruned 50000 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49995 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49992 learnt clauses
+% Pruned 49990 learnt clauses
+% Pruned 49987 learnt clauses
+% Pruned 49986 learnt clauses
+% Pruned 49991 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49998 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49996 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49994 learnt clauses
+% Pruned 49993 learnt clauses
+% Pruned 49992 learnt clauses
+%%%mzn-stat: backjumps=239386
+%%%mzn-stat: baseMem=0
+%%%mzn-stat: boolVariables=12187
+%%%mzn-stat: failures=2120674
+%%%mzn-stat: initTime=0.05
+%%%mzn-stat: intVars=403
+%%%mzn-stat: nodes=2362831
+%%%mzn-stat: nogoods=2120674
+%%%mzn-stat: objective=635
+%%%mzn-stat: optTime=47.48
+%%%mzn-stat: peakDepth=127
+%%%mzn-stat: peakMem=0
+%%%mzn-stat: propagations=1057548052
+%%%mzn-stat: propagators=1173
+%%%mzn-stat: randomSeed=-52029240
+%%%mzn-stat: restarts=28
+%%%mzn-stat: solveTime=604.839
+%%%mzn-stat: time=604.889
+%%%mzn-stat: trailMem=0.05
+%%%mzn-stat: variables=12592
+%%%mzn-stat-end
+=====UNKNOWN=====
+%%%mzn-stat: nSolutions=28
+%%%mzn-stat-end
+Finished in 10m 6s.
